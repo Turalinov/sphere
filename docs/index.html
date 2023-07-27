@@ -6,14 +6,13 @@
   <meta http-equiv="X-UA-Compatible" content="IE=edge">
   <meta name="viewport" content="width=device-width, initial-scale=1.0">
   <meta name="description" content="Главная" />
-  <link rel="stylesheet" href="https://unpkg.com/swiper@8/swiper-bundle.min.css" />
+  <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/swiper@10/swiper-bundle.min.css" />
   <link rel="stylesheet" href="css/main.min.css">
   <title>Главная | Научно-производственная компания ЦИОТ «СФЕРА»</title>
 
   <!-- тут не забыть подключить фавикон  -->
 
 </head>
-
 
 <body>
   <div class="wrapper">
@@ -593,6 +592,93 @@
     </ul>
   </div>
 </section>
+        <section class="promotions">
+  <div class="container">
+    <h2 class="promotions__title">
+      Акции и специальные предложения
+    </h2>
+
+
+    <div class="promotions__slider">
+
+      <!-- Основной контейнер слайдера -->
+      <!-- если хотим поменять ширину слайдов просто меняем ширину контейнера -->
+      <div class="promotions__swiper swiper swiper-no-swiping">
+        <!-- swiper-no-swiping для отключения swipe -->
+        <!-- Дополнительная необходимая обертка - это то что будет крутиться -->
+
+
+
+
+        <div class="swiper-wrapper">
+          <!-- Слайд 1 -->
+          <div class="swiper-slide promotions__card">
+            <img src="img/promotions1.png" alt="" class="promotions__img">
+
+            <div class="promotions__text">
+              <span>
+                -20%
+              </span>
+              для ветеранов и пенсионеров
+            </div>
+          </div>
+          <!-- Слайд 1 end-->
+          <!-- Слайд 2 -->
+          <div class="swiper-slide promotions__card">
+            <img src="img/promotions2.png" alt="" class="promotions__img">
+
+            <div class="promotions__text">
+              <span>
+                -15%
+              </span>
+              при покупке абонемента
+            </div>
+          </div>
+          <!-- Слайд 2 end-->
+
+          <!-- Слайд 3 -->
+          <div class="swiper-slide promotions__card">
+            <img src="img/promotions3.png" alt="" class="promotions__img">
+            <div class="promotions__text">
+              <span>
+                -50%
+              </span>
+              для участников СВО
+            </div>
+
+          </div>
+          <!-- Слайд 3 end-->
+          <!-- Слайд 4 -->
+          <div class="swiper-slide promotions__card promotions__card-uniq">
+            <img src="img/promotions4.png" alt="" class="promotions__img">
+            <div class="promotions__text">
+              <span>
+                -20%
+              </span>
+              для лиц с ограниченными возможностями
+            </div>
+
+          </div>
+          <!-- Слайд 4 end-->
+        </div>
+        <!-- Если нам нужна нумерация страниц -->
+        <div class="swiper-pagination"></div>
+        <!-- Если нам нужна полоса прокрутки -->
+        <!-- <div class="swiper-scrollbar"></div> -->
+      </div>
+
+      <div class="promotions__buttons">
+        <!-- Если нам нужны кнопки навигации -->
+        <div class="swiper-button-prev"></div>
+        <div class="swiper-button-next"></div>
+      </div>
+
+
+    </div>
+
+
+  </div>
+</section>
 
       </div>
     </div>
@@ -834,7 +920,7 @@
   </div>
 </footer>
 
-<script src="https://unpkg.com/swiper@8/swiper-bundle.min.js"></script>
+<script src="https://cdn.jsdelivr.net/npm/swiper@10/swiper-bundle.min.js"></script>
 <script src="js/bundle.min.js"></script>
 </body>
 
