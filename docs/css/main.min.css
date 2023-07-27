@@ -527,7 +527,7 @@ button {
 }
 
 .btn {
-  padding: 37px 50px;
+  padding: 37px 50px 38px;
   font-family: "Inter", sans-serif;
   font-weight: 600;
   font-size: 21px;
@@ -967,6 +967,111 @@ a.footer__politics {
   }
 }
 
+.form__row {
+  display: flex;
+  margin-left: -10px;
+}
+@media screen and (max-width: 768px) {
+  .form__row {
+    flex-direction: column;
+    margin-left: 0;
+    margin-top: -8px;
+  }
+}
+
+.form__block {
+  margin-left: 10px;
+  width: calc(33.3333333333% - 10px);
+}
+@media screen and (max-width: 768px) {
+  .form__block {
+    margin-left: 0;
+    margin-top: 8px;
+    width: 100%;
+  }
+}
+
+.form__block-fill {
+  width: 100%;
+}
+
+.form__row + .form__row {
+  margin-top: 15px;
+}
+@media screen and (max-width: 768px) {
+  .form__row + .form__row {
+    margin-top: 8px;
+  }
+}
+
+.form__input {
+  padding: 40px 30px;
+  border-radius: 80px;
+  width: 100%;
+  border: none;
+}
+@media screen and (max-width: 768px) {
+  .form__input {
+    padding: 32px 20px;
+    font-size: 13px;
+  }
+}
+
+.form__btn {
+  width: 100%;
+  background-color: var(--clr-green-light);
+}
+
+.form__politics {
+  font-size: 14px;
+  color: rgba(255, 255, 255, 0.6);
+}
+.form__politics a {
+  color: rgb(145, 155, 242);
+  text-decoration: none;
+}
+
+.form__checkbox-wrap {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+}
+@media screen and (max-width: 768px) {
+  .form__checkbox-wrap {
+    align-items: flex-start;
+  }
+}
+
+.form__checkbox {
+  appearance: none;
+  position: absolute;
+}
+
+.form__checkbox-custom {
+  flex: 0 0 20px;
+  position: relative;
+  width: 20px;
+  height: 20px;
+  background: var(--clr-white);
+  border-radius: 50%;
+  margin-right: 8px;
+  border: 1px solid #ECECEC;
+}
+
+.form__checkbox-custom-icon {
+  position: absolute;
+  top: 53%;
+  left: 50%;
+  transform: translate(-50%, -50%);
+  width: 80%;
+  height: auto;
+  display: none;
+}
+
+.form__checkbox-wrap input:checked ~ .form__checkbox-custom .form__checkbox-custom-icon {
+  display: block;
+}
+
 .header {
   position: fixed;
   left: 0;
@@ -1316,11 +1421,11 @@ a.footer__politics {
 }
 
 .promotions {
-  padding: 60px 0 200px;
+  padding: 60px 0 0;
 }
 @media screen and (max-width: 768px) {
   .promotions {
-    padding: 40px 0 80px;
+    padding: 40px 0 0;
   }
 }
 
@@ -1337,6 +1442,12 @@ a.footer__politics {
 
 .promotions__slider {
   position: relative;
+  margin-bottom: 110px;
+}
+@media screen and (max-width: 768px) {
+  .promotions__slider {
+    margin-bottom: 18px;
+  }
 }
 
 .promotions__swiper {
@@ -1425,6 +1536,134 @@ a.footer__politics {
 @media screen and (max-width: 768px) {
   .promotions__buttons .swiper-button-next {
     margin-left: 7px;
+  }
+}
+
+.promotions__tickets {
+  display: flex;
+  justify-content: space-between;
+  flex-wrap: wrap;
+  margin-left: -30px;
+  margin-bottom: -50px;
+}
+@media screen and (max-width: 768px) {
+  .promotions__tickets {
+    margin-left: 0px;
+    margin-top: -5px;
+    margin-bottom: -20px;
+  }
+}
+
+.promotions__tickets-item {
+  display: flex;
+  flex-direction: column;
+  width: calc(50% - 30px);
+  margin-left: 30px;
+  padding: 35px 115px 35px 30px;
+  background-color: #F9F9F9;
+  border-radius: 20px;
+}
+@media screen and (max-width: 768px) {
+  .promotions__tickets-item {
+    width: 100%;
+    margin-left: 0;
+    margin-top: 15px;
+    padding: 15px 60px 15px 10px;
+    border-radius: 10px;
+  }
+}
+
+.promotions__tickets-item-ind {
+  background-image: url("../img/promotions_ind.png");
+  background-repeat: no-repeat;
+  background-size: 168px 108px;
+  background-position: top 24px right 12px;
+}
+@media screen and (max-width: 768px) {
+  .promotions__tickets-item-ind {
+    background-size: 113px 72px;
+    background-position: bottom 10px right 11px;
+  }
+}
+
+.promotions__tickets-item-business {
+  background-image: url("../img/promotions_business.png");
+  background-repeat: no-repeat;
+  background-size: 210px 136px;
+  background-position: top 10px right 5px;
+}
+@media screen and (max-width: 768px) {
+  .promotions__tickets-item-business {
+    background-size: 135px 90px;
+    background-position: bottom 0 right 0;
+  }
+}
+
+.promotions__tickets-item h2 {
+  margin-bottom: 10px;
+}
+@media screen and (max-width: 768px) {
+  .promotions__tickets-item h2 {
+    margin-bottom: 5px;
+  }
+}
+
+.promotions__tickets-item div {
+  font-size: 20px;
+}
+@media screen and (max-width: 768px) {
+  .promotions__tickets-item div {
+    font-size: 14px;
+    margin-bottom: 10px;
+  }
+}
+
+.promotions__tickets-item a {
+  font-family: "Inter", sans-serif;
+  font-weight: 500;
+  color: var(--clr-green);
+  font-size: 20px;
+}
+@media screen and (max-width: 768px) {
+  .promotions__tickets-item a {
+    font-size: 14px;
+  }
+}
+
+.promotions__tickets-content {
+  margin-bottom: 20px;
+  flex: 1;
+}
+
+.question {
+  background-color: var(--clr-blue);
+  padding: 130px 0 55px;
+  color: var(--clr-white);
+  text-align: center;
+}
+@media screen and (max-width: 768px) {
+  .question {
+    padding: 100px 0 40px;
+    text-align: left;
+  }
+}
+
+.question__title {
+  color: var(--clr-white);
+  margin-bottom: 5px;
+}
+.question__title span {
+  color: var(--clr-green);
+}
+
+.question__desc {
+  font-size: 24px;
+  margin-bottom: 40px;
+}
+@media screen and (max-width: 768px) {
+  .question__desc {
+    font-size: 16px;
+    margin-bottom: 15px;
   }
 }
 
