@@ -345,6 +345,7 @@ template {
 :root {
   box-sizing: border-box;
   --clr-white: #ffffff;
+  --clr-white-light: #F9F9F9;
   --clr-black: #252525;
   --clr-black-light: #2F2222;
   --clr-green: #87B989;
@@ -508,6 +509,229 @@ button {
   }
 }
 
+.accordion {
+  max-width: 1063px;
+  margin: 0 auto;
+}
+
+.accordion__item + .accordion__item {
+  margin-top: 20px;
+}
+@media screen and (max-width: 768px) {
+  .accordion__item + .accordion__item {
+    margin-top: 5px;
+  }
+}
+
+.accordion__btns {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  background-color: var(--clr-white-light);
+  border-radius: 20px;
+  padding: 15px 17px 15px 60px;
+  position: relative;
+}
+@media screen and (max-width: 768px) {
+  .accordion__btns {
+    flex-direction: column;
+    justify-content: center;
+    align-items: flex-start;
+    background-repeat: 10px;
+    padding: 18px 10px 10px 35px;
+  }
+}
+.accordion__btns::before {
+  content: "";
+  position: absolute;
+  left: -40px;
+  top: 50%;
+  transform: translateY(-50%);
+  width: 80px;
+  height: 80px;
+  background-color: var(--clr-white);
+  border-radius: 50%;
+  background-image: url("../img/acc1.svg");
+  background-repeat: no-repeat;
+  background-position: center;
+  background-size: 30px 30px;
+}
+@media screen and (max-width: 768px) {
+  .accordion__btns::before {
+    left: -20px;
+    top: 10px;
+    transform: initial;
+    width: 40px;
+    height: 40px;
+    background-size: 12px 12px;
+  }
+}
+
+.accordion__item:nth-child(1) .accordion__btns::before {
+  background-image: url("../img/acc1.svg");
+}
+
+.accordion__item:nth-child(2) .accordion__btns::before {
+  background-image: url("../img/acc2.svg");
+}
+
+.accordion__item:nth-child(3) .accordion__btns::before {
+  background-image: url("../img/acc3.svg");
+}
+
+.accordion__item:nth-child(4) .accordion__btns::before {
+  background-image: url("../img/acc4.svg");
+}
+
+.accordion__item:nth-child(5) .accordion__btns::before {
+  background-image: url("../img/acc5.svg");
+}
+
+.accordion__item:nth-child(6) .accordion__btns::before {
+  background-image: url("../img/acc6.svg");
+}
+
+.accordion__item:nth-child(7) .accordion__btns::before {
+  background-image: url("../img/acc7.svg");
+}
+
+.accordion__item:nth-child(8) .accordion__btns::before {
+  background-image: url("../img/acc8.svg");
+}
+
+.accordion__item:nth-child(9) .accordion__btns::before {
+  background-image: url("../img/acc9.svg");
+}
+
+.accordion__item:nth-child(10) .accordion__btns::before {
+  background-image: url("../img/acc10.svg");
+}
+
+.open .accordion__btns {
+  border-radius: 20px 20px 0 0;
+}
+@media screen and (max-width: 768px) {
+  .open .accordion__btns {
+    border-radius: 10px 10px 0 0;
+  }
+}
+
+.accordion__title {
+  font-size: 24px;
+  line-height: 1.5;
+  max-width: 518px;
+}
+@media screen and (max-width: 768px) {
+  .accordion__title {
+    font-size: 16px;
+    margin-bottom: 8px;
+  }
+}
+
+.accordion__control.btn {
+  max-width: 345px;
+  width: 100%;
+}
+@media screen and (max-width: 768px) {
+  .accordion__control.btn {
+    max-width: 226px;
+  }
+}
+
+.accordion__content {
+  overflow: hidden;
+  max-height: 0;
+  opacity: 0;
+  padding: 0;
+  will-change: max-height;
+  transition: all 0.3s ease-out;
+  box-sizing: content-box;
+  border-radius: 0 0 20px 20px;
+}
+@media screen and (max-width: 768px) {
+  .accordion__content {
+    border-radius: 0 0 10px 10px;
+  }
+}
+
+.accordion__content > div {
+  padding: 30px 60px 38px;
+}
+@media screen and (max-width: 768px) {
+  .accordion__content > div {
+    padding: 15px 10px;
+  }
+}
+
+.accordion__row + .accordion__row {
+  margin-top: 20px;
+}
+@media screen and (max-width: 768px) {
+  .accordion__row + .accordion__row {
+    margin-top: 15px;
+  }
+}
+
+.accordion__subtitle {
+  font-size: 14px;
+  line-height: 1.5;
+  margin-bottom: 8px;
+}
+@media screen and (max-width: 768px) {
+  .accordion__subtitle {
+    margin-bottom: 5px;
+  }
+}
+
+.accordion__progressbar {
+  height: 20px;
+  width: 100%;
+  border-radius: 80px;
+  background-color: #F3F3F3;
+  position: relative;
+}
+@media screen and (max-width: 768px) {
+  .accordion__progressbar {
+    height: 14px;
+  }
+}
+
+.accordion__progressbar-line {
+  position: absolute;
+  left: 0;
+  top: 0;
+  border-radius: 80px;
+  height: 100%;
+  background-color: #F3DA99;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+}
+
+.accordion__progressbar span {
+  font-family: "Inter", sans-serif;
+  font-weight: 600;
+  font-size: 14px;
+  z-index: 1;
+  color: var(--clr-white);
+}
+@media screen and (max-width: 768px) {
+  .accordion__progressbar span {
+    font-size: 11px;
+  }
+}
+
+.open .accordion__content {
+  opacity: 1;
+  background-color: var(--clr-white-light);
+  margin-top: 5px;
+}
+@media screen and (max-width: 768px) {
+  .open .accordion__content {
+    margin-top: 3px;
+  }
+}
+
 .br-desktop {
   display: block;
 }
@@ -532,7 +756,7 @@ button {
   font-weight: 600;
   font-size: 21px;
   letter-spacing: 1.05px;
-  background: var(--clr-green);
+  background-color: var(--clr-green);
   color: var(--clr-white);
   text-transform: uppercase;
   transition: all 0.3s;
@@ -554,6 +778,20 @@ button {
 }
 .btn:disabled {
   opacity: 0.5;
+}
+.btn-bordered {
+  padding: 22px 29px;
+  background-color: transparent;
+  color: var(--clr-blue);
+  border: 2px solid var(--clr-blue);
+}
+@media screen and (max-width: 768px) {
+  .btn-bordered {
+    padding: 11px 15px;
+  }
+}
+.btn-bordered:hover {
+  background-color: transparent;
 }
 
 .dropdown {
@@ -791,7 +1029,7 @@ button.dropdown__btn {
 
 .footer__middle {
   padding-bottom: 30px;
-  border-bottom: 0.5px solid #F9F9F9;
+  border-bottom: 0.5px solid var(--clr-white-light);
 }
 @media screen and (max-width: 768px) {
   .footer__middle {
@@ -1226,6 +1464,78 @@ a.footer__politics {
   }
 }
 
+.effects {
+  padding: 75px 0 60px;
+}
+@media screen and (max-width: 768px) {
+  .effects {
+    padding: 40px 0 40px;
+  }
+}
+
+.effects__title {
+  max-width: 868px;
+  margin: 0 auto 10px;
+  text-align: center;
+}
+@media screen and (max-width: 768px) {
+  .effects__title {
+    margin: 0 0 5px;
+    text-align: left;
+  }
+}
+.effects__title span {
+  color: var(--clr-green);
+}
+
+.effects__desc {
+  max-width: 868px;
+  margin: 0 auto 40px;
+  text-align: center;
+  font-size: 24px;
+}
+@media screen and (max-width: 768px) {
+  .effects__desc {
+    text-align: left;
+    font-size: 16px;
+    line-height: 1.5;
+    margin: 0 0 15px;
+  }
+}
+
+.effects__accordion {
+  margin-bottom: 40px;
+}
+@media screen and (max-width: 768px) {
+  .effects__accordion {
+    margin-bottom: 15px;
+  }
+}
+
+.effects__info {
+  font-size: 20px;
+  max-width: 478px;
+  margin: 0 auto 15px;
+  text-align: center;
+}
+@media screen and (max-width: 768px) {
+  .effects__info {
+    font-size: 14px;
+    text-align: left;
+    margin: 0 0 15px;
+  }
+}
+
+.effects__btn {
+  margin: 0 auto;
+  display: block;
+}
+@media screen and (max-width: 768px) {
+  .effects__btn {
+    margin: 0;
+  }
+}
+
 .hero {
   padding-top: 165px;
 }
@@ -1450,7 +1760,7 @@ a.footer__politics {
   }
 }
 .modifications__card {
-  background-color: #F9F9F9;
+  background-color: var(--clr-white-light);
   border-radius: 20px;
   overflow: hidden;
   padding-bottom: 16px;
@@ -1617,7 +1927,7 @@ a.footer__politics {
   width: calc(50% - 30px);
   margin-left: 30px;
   padding: 35px 115px 35px 30px;
-  background-color: #F9F9F9;
+  background-color: var(--clr-white-light);
   border-radius: 20px;
 }
 @media screen and (max-width: 768px) {
@@ -1761,7 +2071,7 @@ a.footer__politics {
   width: calc(33.3333333333% - 30px);
   margin-left: 30px;
   margin-top: 30px;
-  background-color: #F9F9F9;
+  background-color: var(--clr-white-light);
   position: relative;
   border-radius: 20px;
 }
@@ -1783,7 +2093,7 @@ a.footer__politics {
   display: flex;
   justify-content: center;
   align-items: center;
-  background-color: #F9F9F9;
+  background-color: var(--clr-white-light);
   border-radius: 50%;
   border: 10px solid var(--clr-white);
   left: 50%;
@@ -1874,7 +2184,7 @@ a.footer__politics {
 }
 
 .stage__item {
-  background-color: #F9F9F9;
+  background-color: var(--clr-white-light);
   padding: 60px 20px 20px 20px;
   width: calc(33.3333333333% - 20px);
   margin-left: 20px;
@@ -1899,43 +2209,43 @@ a.footer__politics {
 }
 
 .stage__item:nth-child(1) {
-  background-image: url("../img/stage1.png");
+  background-image: url("../img/stage1.svg");
 }
 
 .stage__item:nth-child(2) {
-  background-image: url("../img/stage2.png");
+  background-image: url("../img/stage2.svg");
 }
 
 .stage__item:nth-child(3) {
-  background-image: url("../img/stage3.png");
+  background-image: url("../img/stage3.svg");
 }
 
 .stage__item:nth-child(4) {
-  background-image: url("../img/stage4.png");
+  background-image: url("../img/stage4.svg");
 }
 
 .stage__item:nth-child(5) {
-  background-image: url("../img/stage5.png");
+  background-image: url("../img/stage5.svg");
 }
 
 .stage__item:nth-child(6) {
-  background-image: url("../img/stage6.png");
+  background-image: url("../img/stage6.svg");
 }
 
 .stage__item:nth-child(7) {
-  background-image: url("../img/stage7.png");
+  background-image: url("../img/stage7.svg");
 }
 
 .stage__item:nth-child(8) {
-  background-image: url("../img/stage8.png");
+  background-image: url("../img/stage8.svg");
 }
 
 .stage__item:nth-child(9) {
-  background-image: url("../img/stage9.png");
+  background-image: url("../img/stage9.svg");
 }
 
 .stage__item:nth-child(10) {
-  background-image: url("../img/stage10.png");
+  background-image: url("../img/stage10.svg");
 }
 
 .variants__item {
@@ -1976,7 +2286,7 @@ a.footer__politics {
 }
 
 .variants__card {
-  background-color: #F9F9F9;
+  background-color: var(--clr-white-light);
   height: auto;
 }
 
@@ -2126,7 +2436,7 @@ a.footer__politics {
 .why__info {
   padding: 30px 23px 30px 20px;
   border-radius: 20px;
-  background-color: #F9F9F9;
+  background-color: var(--clr-white-light);
   color: var(--clr-black);
   font-size: 20px;
   line-height: 1.5;
@@ -2276,7 +2586,7 @@ a.footer__politics {
   border-radius: 22px;
   color: #393939;
   text-decoration: none;
-  background-color: #F9F9F9;
+  background-color: var(--clr-white-light);
 }
 
 .results__item + .results__item {
