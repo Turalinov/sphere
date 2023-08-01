@@ -2187,6 +2187,75 @@ a.footer__politics {
   }
 }
 
+.reviews {
+  padding: 70px 0 70px;
+  background-image: url("../img/reviews-bg.png");
+  background-repeat: no-repeat;
+  background-position: center;
+  background-size: cover;
+  min-height: 1767px;
+}
+
+.reviews__title {
+  color: var(--clr-white);
+  text-align: center;
+  margin-bottom: 40px;
+}
+
+.reviews__swiper {
+  overflow: initial;
+}
+
+.reviews__card-img {
+  width: 370px;
+  height: 523px;
+  overflow: hidden;
+  border-radius: 20px;
+  margin-bottom: 20px;
+}
+
+.reviews__card-img-elem {
+  width: 100%;
+  object-fit: cover;
+  object-position: center;
+}
+
+.reviews__card-autor {
+  color: var(--clr-white);
+  text-align: center;
+  min-height: 54px;
+}
+
+.reviews__control {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+}
+
+.reviews__swiper .swiper-pagination {
+  position: static;
+  margin-bottom: 25px;
+}
+@media screen and (max-width: 768px) {
+  .reviews__swiper .swiper-pagination {
+    display: none;
+  }
+}
+
+.reviews__btns {
+  display: flex;
+}
+
+.reviews__swiper .swiper-button-prev,
+.reviews__swiper .swiper-button-next {
+  position: static;
+}
+
+.reviews__swiper .swiper-button-next {
+  margin-left: 14px;
+}
+
 .sessions {
   padding: 80px 0 60px;
 }
