@@ -422,7 +422,6 @@ select, textarea {
   font-family: "Montserrat", sans-serif;
   font-weight: 400;
   font-size: 16px;
-  color: rgba(37, 37, 37, 0.5);
   line-height: normal;
 }
 @media screen and (max-width: 768px) {
@@ -1288,6 +1287,9 @@ a.footer__politics {
 .form__checkbox {
   appearance: none;
   position: absolute;
+  pointer-events: none;
+  opacity: 0;
+  visibility: hidden;
 }
 
 .form__checkbox-custom {
