@@ -363,6 +363,10 @@ template {
   box-sizing: border-box;
 }
 
+.lg-backdrop {
+  background-color: #efefef;
+}
+
 html,
 body {
   height: 100%;
@@ -1587,6 +1591,149 @@ a.footer__politics {
   object-position: center;
 }
 
+.comment {
+  max-width: 1080px;
+  margin: 0 auto 0;
+  display: flex;
+}
+@media screen and (max-width: 1119px) {
+  .comment {
+    margin: 0px 20px;
+    border: 1px solid blue;
+  }
+}
+@media screen and (max-width: 992px) {
+  .comment {
+    margin: 0;
+    flex-direction: column;
+  }
+}
+
+.comment__block:nth-child(1) {
+  width: 45%;
+  margin-right: 30px;
+}
+@media screen and (max-width: 992px) {
+  .comment__block:nth-child(1) {
+    width: 100%;
+    margin-right: 0;
+  }
+}
+.comment__block:nth-child(2) {
+  width: 55%;
+  margin-left: 30px;
+}
+@media screen and (max-width: 992px) {
+  .comment__block:nth-child(2) {
+    width: 100%;
+    margin: 0 auto;
+    height: 378px;
+    max-width: 300px;
+  }
+}
+
+.comment__list {
+  display: flex;
+  flex-direction: column;
+  padding: 20px 10px 40px 20px;
+  background-color: var(--clr-white);
+  border-radius: 20px;
+}
+@media screen and (max-width: 992px) {
+  .comment__list {
+    flex-direction: row;
+    padding: 10px;
+    border-radius: 10px 0 0 10px;
+    overflow-x: auto;
+    width: 100%;
+    margin-bottom: 20px;
+  }
+}
+
+.comment__link {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  background-color: var(--clr-white);
+  width: 100%;
+  text-decoration: none;
+  color: var(--clr-block);
+}
+@media screen and (max-width: 992px) {
+  .comment__link {
+    flex-direction: column;
+    width: 180px;
+    align-items: flex-start;
+  }
+}
+
+.comment__item + .comment__item {
+  margin-top: 20px;
+}
+@media screen and (max-width: 992px) {
+  .comment__item + .comment__item {
+    margin-top: 0;
+    margin-left: 10px;
+  }
+}
+
+.comment__img {
+  width: 120px;
+  height: 120px;
+  border-radius: 50%;
+  overflow: hidden;
+  margin-right: 20px;
+  flex: 0 0 auto;
+}
+@media screen and (max-width: 992px) {
+  .comment__img {
+    width: 50px;
+    height: 50px;
+    margin-right: 0;
+    margin-bottom: 5px;
+  }
+}
+
+.comment__img-elem {
+  object-fit: cover;
+  width: 100%;
+  object-position: center;
+}
+
+.comment__content {
+  display: flex;
+  flex-direction: column;
+}
+
+.comment__fullname {
+  font-weight: 500;
+  margin-bottom: 5px;
+}
+@media screen and (max-width: 992px) {
+  .comment__fullname {
+    font-size: 14px;
+    line-height: 1.4;
+  }
+}
+
+.comment__position {
+  font-size: 16px;
+}
+@media screen and (max-width: 992px) {
+  .comment__position {
+    font-size: 12px;
+    line-height: 1.4;
+  }
+}
+
+.comment__video.video {
+  height: 100%;
+  display: none;
+}
+.comment__video.video.active {
+  display: block;
+}
+
 .effects {
   padding: 75px 0 60px;
 }
@@ -2195,11 +2342,23 @@ a.footer__politics {
   background-size: cover;
   min-height: 1767px;
 }
+@media screen and (max-width: 768px) {
+  .reviews {
+    padding: 50px 0 40px;
+    min-height: 1221px;
+  }
+}
 
 .reviews__title {
   color: var(--clr-white);
   text-align: center;
   margin-bottom: 40px;
+}
+@media screen and (max-width: 768px) {
+  .reviews__title {
+    text-align: left;
+    margin-bottom: 15px;
+  }
 }
 
 .reviews__swiper {
@@ -2207,11 +2366,22 @@ a.footer__politics {
 }
 
 .reviews__card-img {
-  width: 370px;
-  height: 523px;
+  max-width: 370px;
   overflow: hidden;
   border-radius: 20px;
-  margin-bottom: 20px;
+  margin: 0 auto 20px;
+  cursor: url("../img/reviews-cursor.png"), auto;
+}
+@media screen and (max-width: 992px) {
+  .reviews__card-img {
+    cursor: pointer;
+  }
+}
+@media screen and (max-width: 768px) {
+  .reviews__card-img {
+    max-width: 290px;
+    margin-bottom: 5px;
+  }
 }
 
 .reviews__card-img-elem {
@@ -2225,12 +2395,33 @@ a.footer__politics {
   text-align: center;
   min-height: 54px;
 }
+@media screen and (max-width: 768px) {
+  .reviews__card-autor {
+    text-align: left;
+    font-size: 14px;
+    min-height: 42px;
+  }
+}
 
 .reviews__control {
   display: flex;
   flex-direction: column;
   align-items: center;
   justify-content: center;
+}
+@media screen and (max-width: 768px) {
+  .reviews__control {
+    align-items: flex-start;
+  }
+}
+
+.reviews__swiper {
+  margin-bottom: 80px;
+}
+@media screen and (max-width: 768px) {
+  .reviews__swiper {
+    margin-bottom: 20px;
+  }
 }
 
 .reviews__swiper .swiper-pagination {
@@ -2254,6 +2445,11 @@ a.footer__politics {
 
 .reviews__swiper .swiper-button-next {
   margin-left: 14px;
+}
+@media screen and (max-width: 768px) {
+  .reviews__swiper .swiper-button-next {
+    margin-left: 8px;
+  }
 }
 
 .sessions {
