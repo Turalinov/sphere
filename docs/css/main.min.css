@@ -1285,9 +1285,20 @@ button {
 .entries {
   padding: 205px 0 70px;
 }
+@media screen and (max-width: 768px) {
+  .entries {
+    padding: 90px 0 80px;
+    position: relative;
+  }
+}
 
 .entries__title {
   margin-bottom: 40px;
+}
+@media screen and (max-width: 768px) {
+  .entries__title {
+    margin-bottom: 15px;
+  }
 }
 
 .entries__wrap {
@@ -1295,10 +1306,23 @@ button {
   justify-content: space-between;
   margin-left: -30px;
 }
+@media screen and (max-width: 768px) {
+  .entries__wrap {
+    flex-direction: column;
+    margin-left: 0;
+  }
+}
 
 .entries__filter {
   width: 32%;
   margin-left: 30px;
+}
+@media screen and (max-width: 768px) {
+  .entries__filter {
+    width: 100%;
+    margin-left: 0;
+    margin-bottom: 30px;
+  }
 }
 
 .entries__list {
@@ -1307,17 +1331,37 @@ button {
   flex-wrap: wrap;
   margin-top: -30px;
 }
+@media screen and (max-width: 768px) {
+  .entries__list {
+    width: 100%;
+    margin-top: -20px;
+    padding-top: 75px;
+  }
+}
 
 .entries__item {
   width: calc(50% - 30px);
   margin-left: 30px;
   margin-top: 30px;
 }
+@media screen and (max-width: 768px) {
+  .entries__item {
+    width: 100%;
+    margin-left: 0;
+    margin-top: 20px;
+  }
+}
 
 .entries__img {
   border-radius: 20px;
   overflow: hidden;
   margin-bottom: 15px;
+}
+@media screen and (max-width: 768px) {
+  .entries__img {
+    border-radius: 10px;
+    margin-bottom: 10px;
+  }
 }
 
 .entries__img-elem {
@@ -1334,11 +1378,24 @@ button {
   overflow: hidden;
   margin-bottom: 15px;
 }
+@media screen and (max-width: 768px) {
+  .entries__subtitle {
+    font-size: 16px;
+    height: initial;
+    overflow: initial;
+    margin-bottom: 10px;
+  }
+}
 
 .entries__links {
   display: flex;
   justify-content: space-between;
   align-items: center;
+}
+@media screen and (max-width: 768px) {
+  .entries__links {
+    font-size: 14px;
+  }
 }
 
 .entries__date {
@@ -1356,13 +1413,78 @@ button {
   border-radius: 20px;
   padding: 30px 26px 30px 30px;
 }
+@media screen and (max-width: 768px) {
+  .filter {
+    background-color: var(--clr-white);
+    border-radius: 10px;
+    border: 1px solid #E8DCC0;
+    position: absolute;
+    left: 0;
+    width: 100%;
+    padding: 13px 13px 13px 10px;
+  }
+}
 
 .filter__top {
   display: none;
 }
+@media screen and (max-width: 768px) {
+  .filter__top {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+  }
+}
+
+@media screen and (max-width: 768px) {
+  .filter__top span {
+    font-weight: 600;
+    font-size: 16px;
+  }
+}
+
+@media screen and (max-width: 768px) {
+  .filter__img {
+    width: 24px;
+    height: 18px;
+  }
+}
+
+@media screen and (max-width: 768px) {
+  .filter__img-elem {
+    object-fit: cover;
+    object-position: center;
+    width: 100%;
+  }
+}
+
+.filter__list {
+  overflow: hidden;
+  max-height: 0;
+  opacity: 0;
+  padding: 0;
+  will-change: max-height;
+  transition: all 0.3s ease-out;
+  box-sizing: content-box;
+}
+
+.opened .filter__list {
+  opacity: 1;
+}
+@media screen and (max-width: 768px) {
+  .opened .filter__list {
+    margin-top: 10px;
+    padding-bottom: 17px;
+  }
+}
 
 .filter__item + .filter__item {
   margin-top: 20px;
+}
+@media screen and (max-width: 768px) {
+  .filter__item + .filter__item {
+    margin-top: 10px;
+  }
 }
 
 .filter__item > span {
@@ -1371,13 +1493,18 @@ button {
   text-transform: uppercase;
   display: inline-block;
 }
+@media screen and (max-width: 768px) {
+  .filter__item > span {
+    font-size: 18px;
+  }
+}
 
 .filter__second-list {
   margin-top: 10px;
 }
 
 .filter__second-item + .filter__second-item {
-  margin-top: 10px;
+  margin-top: 5px;
 }
 
 .filter__second-item-top {
@@ -1389,6 +1516,11 @@ button {
 .filter__second-text {
   font-weight: 600;
 }
+@media screen and (max-width: 768px) {
+  .filter__second-text {
+    font-size: 14px;
+  }
+}
 
 .filter__icon {
   flex: 0 0 17px;
@@ -1399,6 +1531,7 @@ button {
 }
 @media screen and (max-width: 768px) {
   .filter__icon {
+    display: block;
     width: 15px;
     height: 15px;
   }
@@ -1421,6 +1554,11 @@ button {
 .open .filter__third-list-content {
   opacity: 1;
   margin-top: 5px;
+}
+@media screen and (max-width: 768px) {
+  .open .filter__third-list-content {
+    font-size: 14px;
+  }
 }
 
 .filter__checkbox-wrap {

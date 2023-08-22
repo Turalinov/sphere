@@ -520,13 +520,15 @@
             <span>
               Фильтр
             </span>
-            <div class="filter__img">
-              <img src="img/filter.svg" alt="" class="filter__img-elem">
-            </div>
+            <button class="filter__control" aria-expanded="false">
+              <div class="filter__img">
+                <img src="img/filter.svg" alt="" class="filter__img-elem">
+              </div>
+            </button>
           </div>
           <!-- top  -->
 
-          <ul class="filter__list">
+          <ul class="filter__list" aria-hidden="true">
             <li class="filter__item">
               <span>Все</span>
             </li>
@@ -539,7 +541,10 @@
                   <div class="filter__second-item-top">
                     <!-- custom__label -->
                     <label class="filter__checkbox-wrap">
-                      <input type="checkbox" class="filter__checkbox" name="1">
+                      <input type="checkbox" class="filter__checkbox"
+                        data-category="Isledovaniya-nauchno-isledovatelskikh-institutov">
+
+
                       <div class="filter__checkbox-custom">
                       </div>
                       <span class="filter__second-text">Иследования научно-иследовательских институтов</span>
@@ -562,7 +567,8 @@
                       <li class="filter__third-item">
                         <!-- custom__label -->
                         <label class="filter__checkbox-wrap">
-                          <input type="checkbox" class="filter__checkbox" name="1">
+                          <input type="checkbox" class="filter__checkbox"
+                            data-category="Institut-biofiziki-kletki-Pushchino-RAN">
                           <div class="filter__checkbox-custom">
                           </div>
                           <span class="filter__third-text">Институт биофизики клетки Пущино РАН</span>
@@ -573,7 +579,7 @@
                       <li class="filter__third-item">
                         <!-- custom__label -->
                         <label class="filter__checkbox-wrap">
-                          <input type="checkbox" class="filter__checkbox" name="1">
+                          <input type="checkbox" class="filter__checkbox" data-category="MGU-Biofak-Moskva">
                           <div class="filter__checkbox-custom">
                           </div>
                           <span class="filter__third-text">МГУ Биофак Москва</span>
@@ -584,8 +590,9 @@
                       <li class="filter__third-item">
                         <!-- custom__label -->
                         <label class="filter__checkbox-wrap">
-                          <input type="checkbox" class="filter__checkbox" name="1">
-                          <div class="filter__checkbox-custom">
+                          <input type="checkbox" class="filter__checkbox"
+                            data-category="Severo-Kavkazskii-Federalnii-Universitet">
+                          <div class=" filter__checkbox-custom">
                           </div>
                           <span class="filter__third-text">Северо-Кавказский Федеральный Университет</span>
 
@@ -595,7 +602,8 @@
                       <li class="filter__third-item">
                         <!-- custom__label -->
                         <label class="filter__checkbox-wrap">
-                          <input type="checkbox" class="filter__checkbox" name="1">
+                          <input type="checkbox" class="filter__checkbox"
+                            data-category="Nauchnii-tsentr-issledovaniya-soznaniya,-Moskva">
                           <div class="filter__checkbox-custom">
                           </div>
                           <span class="filter__third-text">Научный центр исследования сознания, Москва</span>
@@ -606,7 +614,8 @@
                       <li class="filter__third-item">
                         <!-- custom__label -->
                         <label class="filter__checkbox-wrap">
-                          <input type="checkbox" class="filter__checkbox" name="1">
+                          <input type="checkbox" class="filter__checkbox"
+                            data-category="Akademiya-tselostnoi-meditsini,-Berlin">
                           <div class="filter__checkbox-custom">
                           </div>
                           <span class="filter__third-text">Академия целостной медицины, Берлин</span>
@@ -617,7 +626,8 @@
                       <li class="filter__third-item">
                         <!-- custom__label -->
                         <label class="filter__checkbox-wrap">
-                          <input type="checkbox" class="filter__checkbox" name="1">
+                          <input type="checkbox" class="filter__checkbox"
+                            data-category="Institut-molekulyarnoi-biologii-Pushchino-RAN">
                           <div class="filter__checkbox-custom">
                           </div>
                           <span class="filter__third-text">Институт молекулярной биологии Пущино РАН</span>
@@ -628,7 +638,8 @@
                       <li class="filter__third-item">
                         <!-- custom__label -->
                         <label class="filter__checkbox-wrap">
-                          <input type="checkbox" class="filter__checkbox" name="1">
+                          <input type="checkbox" class="filter__checkbox"
+                            data-category="Moskva,-NII-ekologii-cheloveka-i-gigieni-okruzhayushchei-sredi-Minzdrava">
                           <div class="filter__checkbox-custom">
                           </div>
                           <span class="filter__third-text">Москва, НИИ экологии человека и гигиены окружающей среды
@@ -640,7 +651,8 @@
                       <li class="filter__third-item">
                         <!-- custom__label -->
                         <label class="filter__checkbox-wrap">
-                          <input type="checkbox" class="filter__checkbox" name="1">
+                          <input type="checkbox" class="filter__checkbox"
+                            data-category="Institut-Fiziologii-im.-L.-A.-Orbeli-NAN-RA">
                           <div class="filter__checkbox-custom">
                           </div>
                           <span class="filter__third-text">Институт Физиологии им. Л. А. Орбели НАН РА</span>
@@ -651,7 +663,7 @@
                       <li class="filter__third-item">
                         <!-- custom__label -->
                         <label class="filter__checkbox-wrap">
-                          <input type="checkbox" class="filter__checkbox" name="1">
+                          <input type="checkbox" class="filter__checkbox" data-category="Akademiya-im.-Timiryazeva">
                           <div class="filter__checkbox-custom">
                           </div>
                           <span class="filter__third-text">Академия им. Тимирязева</span>
@@ -662,7 +674,8 @@
                       <li class="filter__third-item">
                         <!-- custom__label -->
                         <label class="filter__checkbox-wrap">
-                          <input type="checkbox" class="filter__checkbox" name="1">
+                          <input type="checkbox" class="filter__checkbox"
+                            data-category="Vserossiiskii-Nauchno-issledovatelskii-Institut-pishchevikh-biotekhnologii">
                           <div class="filter__checkbox-custom">
                           </div>
                           <span class="filter__third-text">Всероссийский Научно-исследовательский Институт пищевых
@@ -681,7 +694,7 @@
                   <div class="filter__second-item-top">
                     <!-- custom__label -->
                     <label class="filter__checkbox-wrap">
-                      <input type="checkbox" class="filter__checkbox" name="1">
+                      <input type="checkbox" class="filter__checkbox" data-category="Issledovaniya-TsIOT-«SFERA»">
                       <div class="filter__checkbox-custom">
                       </div>
                       <span class="filter__second-text">Исследования ЦИОТ «СФЕРА»</span>
@@ -702,7 +715,7 @@
                       <li class="filter__third-item">
                         <!-- custom__label -->
                         <label class="filter__checkbox-wrap">
-                          <input type="checkbox" class="filter__checkbox" name="1">
+                          <input type="checkbox" class="filter__checkbox" data-category="2005-10">
                           <div class="filter__checkbox-custom">
                           </div>
                           <span class="filter__third-text">2005-10</span>
@@ -713,7 +726,7 @@
                       <li class="filter__third-item">
                         <!-- custom__label -->
                         <label class="filter__checkbox-wrap">
-                          <input type="checkbox" class="filter__checkbox" name="1">
+                          <input type="checkbox" class="filter__checkbox" data-category="2011-15">
                           <div class="filter__checkbox-custom">
                           </div>
                           <span class="filter__third-text">2011-15</span>
@@ -724,7 +737,7 @@
                       <li class="filter__third-item">
                         <!-- custom__label -->
                         <label class="filter__checkbox-wrap">
-                          <input type="checkbox" class="filter__checkbox" name="1">
+                          <input type="checkbox" class="filter__checkbox" data-category="2016">
                           <div class="filter__checkbox-custom">
                           </div>
                           <span class="filter__third-text">2016</span>
@@ -735,7 +748,7 @@
                       <li class="filter__third-item">
                         <!-- custom__label -->
                         <label class="filter__checkbox-wrap">
-                          <input type="checkbox" class="filter__checkbox" name="1">
+                          <input type="checkbox" class="filter__checkbox" data-category="2017">
                           <div class="filter__checkbox-custom">
                           </div>
                           <span class="filter__third-text">2017</span>
@@ -746,7 +759,7 @@
                       <li class="filter__third-item">
                         <!-- custom__label -->
                         <label class="filter__checkbox-wrap">
-                          <input type="checkbox" class="filter__checkbox" name="1">
+                          <input type="checkbox" class="filter__checkbox" data-category="2018">
                           <div class="filter__checkbox-custom">
                           </div>
                           <span class="filter__third-text">2018</span>
@@ -757,7 +770,7 @@
                       <li class="filter__third-item">
                         <!-- custom__label -->
                         <label class="filter__checkbox-wrap">
-                          <input type="checkbox" class="filter__checkbox" name="1">
+                          <input type="checkbox" class="filter__checkbox" data-category="2019">
                           <div class="filter__checkbox-custom">
                           </div>
                           <span class="filter__third-text">2019</span>
@@ -768,7 +781,7 @@
                       <li class="filter__third-item">
                         <!-- custom__label -->
                         <label class="filter__checkbox-wrap">
-                          <input type="checkbox" class="filter__checkbox" name="1">
+                          <input type="checkbox" class="filter__checkbox" data-category="2020">
                           <div class="filter__checkbox-custom">
                           </div>
                           <span class="filter__third-text">2020</span>
@@ -779,7 +792,7 @@
                       <li class="filter__third-item">
                         <!-- custom__label -->
                         <label class="filter__checkbox-wrap">
-                          <input type="checkbox" class="filter__checkbox" name="1">
+                          <input type="checkbox" class="filter__checkbox" data-category="2021">
                           <div class="filter__checkbox-custom">
                           </div>
                           <span class="filter__third-text">2021</span>
@@ -790,7 +803,7 @@
                       <li class="filter__third-item">
                         <!-- custom__label -->
                         <label class="filter__checkbox-wrap">
-                          <input type="checkbox" class="filter__checkbox" name="1">
+                          <input type="checkbox" class="filter__checkbox" data-category="2022">
                           <div class="filter__checkbox-custom">
                           </div>
                           <span class="filter__third-text">2022</span>
@@ -806,7 +819,7 @@
                 <li class="filter__second-item">
                   <!-- custom__label -->
                   <label class="filter__checkbox-wrap">
-                    <input type="checkbox" class="filter__checkbox" name="1">
+                    <input type="checkbox" class="filter__checkbox" data-category="Sovmestnie-issledovaniya">
                     <div class="filter__checkbox-custom">
                     </div>
                     <span class="filter__second-text">Совместные исследования</span>
@@ -817,7 +830,8 @@
                 <li class="filter__second-item">
                   <!-- custom__label -->
                   <label class="filter__checkbox-wrap">
-                    <input type="checkbox" class="filter__checkbox" name="1">
+                    <input type="checkbox" class="filter__checkbox"
+                      data-category="Issledovaniya-kristallicheskikh-modulei-v-NII">
                     <div class="filter__checkbox-custom">
                     </div>
                     <span class="filter__second-text">Исследования кристаллических модулей в НИИ</span>
@@ -834,7 +848,7 @@
 
                   <!-- custom__label -->
                   <label class="filter__checkbox-wrap">
-                    <input type="checkbox" class="filter__checkbox" name="1">
+                    <input type="checkbox" class="filter__checkbox" data-category="Virtualnie-paleoekspeditsii">
                     <div class="filter__checkbox-custom">
                     </div>
                     <span style="font-weight: 400;" class="filter__second-text">Виртуальные палеоэкспедиции</span>
@@ -847,11 +861,10 @@
                 <li class="filter__second-item" style="margin-top: 5px;">
                   <!-- custom__label -->
                   <label class="filter__checkbox-wrap">
-                    <input type="checkbox" class="filter__checkbox" name="1">
+                    <input type="checkbox" class="filter__checkbox" data-category="Viezdnie-ekspeditsii">
                     <div class="filter__checkbox-custom">
                     </div>
-                    <span style="font-weight: 400;" class="filter__second-text">Выездные
-                      экспедиции</span>
+                    <span style="font-weight: 400;" class="filter__second-text">Выездные экспедиции</span>
                   </label>
                   <!-- custom__label -->
 
@@ -859,7 +872,7 @@
                 <li class="filter__second-item">
                   <!-- custom__label -->
                   <label class="filter__checkbox-wrap">
-                    <input type="checkbox" class="filter__checkbox" name="1">
+                    <input type="checkbox" class="filter__checkbox" data-category="NAUChNIE-STATI">
                     <div class="filter__checkbox-custom">
                     </div>
                     <span class="filter__second-text">НАУЧНЫЕ СТАТЬИ</span>
@@ -870,7 +883,7 @@
                 <li class="filter__second-item">
                   <!-- custom__label -->
                   <label class="filter__checkbox-wrap">
-                    <input type="checkbox" class="filter__checkbox" name="1">
+                    <input type="checkbox" class="filter__checkbox" data-category="NAUChNIE-PUBLIKATsII">
                     <div class="filter__checkbox-custom">
                     </div>
                     <span class="filter__second-text">НАУЧНЫЕ ПУБЛИКАЦИИ</span>
@@ -881,7 +894,7 @@
                 <li class="filter__second-item">
                   <!-- custom__label -->
                   <label class="filter__checkbox-wrap">
-                    <input type="checkbox" class="filter__checkbox" name="1">
+                    <input type="checkbox" class="filter__checkbox" data-category="KONFERENTsII-I-DOKLADI">
                     <div class="filter__checkbox-custom">
                     </div>
                     <span class="filter__second-text">КОНФЕРЕНЦИИ И ДОКЛАДЫ</span>
@@ -892,7 +905,7 @@
                 <li class="filter__second-item">
                   <!-- custom__label -->
                   <label class="filter__checkbox-wrap">
-                    <input type="checkbox" class="filter__checkbox" name="1">
+                    <input type="checkbox" class="filter__checkbox" data-category="INTERVYu-UChENIKh">
                     <div class="filter__checkbox-custom">
                     </div>
                     <span class="filter__second-text">ИНТЕРВЬЮ УЧЕНЫХ</span>
@@ -903,7 +916,7 @@
                 <li class="filter__second-item">
                   <!-- custom__label -->
                   <label class="filter__checkbox-wrap">
-                    <input type="checkbox" class="filter__checkbox" name="1">
+                    <input type="checkbox" class="filter__checkbox" data-category="OPISANIE-ZERKAL-KOZIREVA-BIG">
                     <div class="filter__checkbox-custom">
                     </div>
                     <span class="filter__second-text">ОПИСАНИЕ ЗЕРКАЛ КОЗЫРЕВА БИГ</span>
@@ -914,7 +927,7 @@
                 <li class="filter__second-item">
                   <!-- custom__label -->
                   <label class="filter__checkbox-wrap">
-                    <input type="checkbox" class="filter__checkbox" name="1">
+                    <input type="checkbox" class="filter__checkbox" data-category="OPISANIE-APDK">
                     <div class="filter__checkbox-custom">
                     </div>
                     <span class="filter__second-text">ОПИСАНИЕ АПДК</span>
