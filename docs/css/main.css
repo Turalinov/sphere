@@ -480,6 +480,10 @@ button {
   flex: 1;
 }
 
+figure {
+  margin: 0;
+}
+
 .container {
   margin: 0 auto;
   height: 100%;
