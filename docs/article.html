@@ -505,7 +505,12 @@
 </header>
         <section class="article">
   <div class="article__top">
-
+    <div class="article__top-img">
+      <picture>
+        <source media="(min-width: 768px)" srcset="img/article-top@desktop.png">
+        <img class="article__top-img-elem" src="img/article-top@mobile.png" alt="">
+      </picture>
+    </div>
   </div>
 
   <div class="container">
@@ -533,7 +538,7 @@
 
           <div class="article__left-content">
             <!-- описание  обязательное-->
-            <div class="article__text">
+            <div class="article__text article__text--required">
               Из материалов исследований Проекта «Виртуальные сталкеры» в научно-исследовательской Лаборатории ЦИОТ
               «Сфера».
             </div>
@@ -549,7 +554,6 @@
                 комплексе перед сеансом в Зеркале Козырева БИГ-Ги.
               </div>
             </div>
-
 
 
 
@@ -602,9 +606,10 @@
               </div>
 
               <div class="article__img-desc">
-                H-и Лаборатория интегральных биоинформационных технологий ЦИОТ
-                «Сфера». Александр Сплошнов. Подготовка к сеансу в
-                Зеркале Козырева БИГ-Ги
+                Н-и Лаборатория интегральных биоинформационных
+                технологий ЦИОТ «Сфера». Александр Сплошнов.
+                Визуализация 3D объекта увиденного во время сеанса в
+                Зеркале Козырева БИГ.
               </div>
             </div>
 
@@ -622,37 +627,39 @@
                 <a id="vk" title="Vk"
                   href="http://vk.com/share.php?url=https://turalinov.github.io/&title=Title&description=&image="
                   target="_blank">
-                  <!-- vk -->
+                  vk
                   <!-- внутри сделать svg  -->
-                  <svg class="share__icon" viewBox="0 0 35 35" width="35">
+                  <!-- <svg class="share__icon" viewBox="0 0 35 35" width="35">
                     <use xlink:href="img/icons/sprite.svg#vk"></use>
-                  </svg>
+                  </svg> -->
                 </a>
               </li>
               <li class="share__item">
                 <a id="tw" title="Twitter"
                   href="http://twitter.com/intent/tweet?status=Title https://turalinov.github.io/" target="_blank">
-                  <!-- tw --><svg class="share__icon" viewBox="0 0 35 35" width="35">
+                  tw
+                  <!-- <svg class="share__icon" viewBox="0 0 35 35" width="35">
                     <use xlink:href="img/icons/sprite.svg#vk"></use>
-                  </svg>
+                  </svg> -->
                 </a>
               </li>
               <li class="share__item">
                 <a id="ok" title="OK"
                   href="https://connect.ok.ru/offer?url=https://turalinov.github.io&title=TITLE&imageUrl=IMAGE_URL"
                   target="_blank">
-                  <!-- ok -->
-                  <svg class="share__icon" viewBox="0 0 35 35" width="35">
+                  ok
+                  <!-- <svg class="share__icon" viewBox="0 0 35 35" width="35">
                     <use xlink:href="img/icons/sprite.svg#vk"></use>
-                  </svg></a>
+                  </svg> -->
+                </a>
               </li>
               <li class="share__item">
                 <a id="tg" title="TG" href="https://telegram.me/share/url?url=https://turalinov.github.io/&text=ТЕКСТ"
                   target="_blank">
-                  <!-- tg -->
-                  <svg class="share__icon" viewBox="0 0 35 35" width="35">
+                  tg
+                  <!-- <svg class="share__icon" viewBox="0 0 35 35" width="35">
                     <use xlink:href="img/icons/sprite.svg#vk"></use>
-                  </svg>
+                  </svg> -->
                 </a>
               </li>
 
@@ -700,9 +707,10 @@
               </div>
 
               <div class="article__img-desc">
-                H-и Лаборатория интегральных биоинформационных технологий ЦИОТ
-                «Сфера». Александр Сплошнов. Подготовка к сеансу в
-                Зеркале Козырева БИГ-Ги
+                Н-и Лаборатория интегральных биоинформационных
+                технологий ЦИОТ «Сфера». Александр Сплошнов.
+                Визуализация 3D объекта увиденного во время сеанса в
+                Зеркале Козырева БИГ.
               </div>
             </div>
             <!-- end 3  -->
@@ -724,46 +732,50 @@
     <h2 class="last__title">
       Последние статьи по теме
     </h2>
-    <ul class="entries__list" style="width: initial; margin-left: -30px;">
-      <!-- /* width: 100%; -->
-      <li class="entries__item" style="width: calc(100%/3 - 30px);">
-        <div class="entries__img">
-          <img src="img/entries1.png" alt="" class="entries__img-elem">
-        </div>
-        <h2 class="entries__subtitle">
-          Новость 2. Так будет выглядеть новость в 2 строки
-        </h2>
-        <div class="entries__links">
-          <span class="entries__date">06.09.2022</span>
-          <a href="article.html" class="entries__link" target="_blank">Подробнее →</a>
-        </div>
-      </li>
-      <li class="entries__item" style="width: calc(100%/3 - 30px);">
-        <div class="entries__img">
-          <img src="img/entries2.png" alt="" class="entries__img-elem">
-        </div>
-        <h2 class="entries__subtitle">
-          Новость 3. С очень длинным заголовком, который не поместитс...
-        </h2>
-        <div class="entries__links">
-          <span class="entries__date">06.09.2022</span>
-          <a href="article.html" class="entries__link" target="_blank">Подробнее →</a>
-        </div>
-      </li>
-      <li class="entries__item" style="width: calc(100%/3 - 30px);">
-        <div class="entries__img">
-          <img src="img/entries2.png" alt="" class="entries__img-elem">
-        </div>
-        <h2 class="entries__subtitle">
-          Новость 3. С очень длинным заголовком, который не поместитс...
-        </h2>
-        <div class="entries__links">
-          <span class="entries__date">06.09.2022</span>
-          <a href="article.html" class="entries__link" target="_blank">Подробнее →</a>
-        </div>
-      </li>
 
-    </ul>
+
+    <div class="last__entries">
+      <ul class="entries__list">
+        <!-- /* width: 100%; -->
+        <li class="entries__item">
+          <div class="entries__img">
+            <img src="img/entries1.png" alt="" class="entries__img-elem">
+          </div>
+          <h2 class="entries__subtitle">
+            Новость 2. Так будет выглядеть новость в 2 строки
+          </h2>
+          <div class="entries__links">
+            <span class="entries__date">06.09.2022</span>
+            <a href="article.html" class="entries__link" target="_blank">Подробнее →</a>
+          </div>
+        </li>
+        <li class="entries__item">
+          <div class="entries__img">
+            <img src="img/entries2.png" alt="" class="entries__img-elem">
+          </div>
+          <h2 class="entries__subtitle">
+            Новость 3. С очень длинным заголовком, который не поместитс...
+          </h2>
+          <div class="entries__links">
+            <span class="entries__date">06.09.2022</span>
+            <a href="article.html" class="entries__link" target="_blank">Подробнее →</a>
+          </div>
+        </li>
+        <li class="entries__item">
+          <div class="entries__img">
+            <img src="img/entries2.png" alt="" class="entries__img-elem">
+          </div>
+          <h2 class="entries__subtitle">
+            Новость 3. С очень длинным заголовком, который не поместитс...
+          </h2>
+          <div class="entries__links">
+            <span class="entries__date">06.09.2022</span>
+            <a href="article.html" class="entries__link" target="_blank">Подробнее →</a>
+          </div>
+        </li>
+
+      </ul>
+    </div>
   </div>
 </section>
       </div>
