@@ -1286,11 +1286,11 @@ figure {
   }
 }
 
-.article {
+.article, .interview {
   padding: 165px 0 60px;
 }
 @media screen and (max-width: 768px) {
-  .article {
+  .article, .interview {
     padding: 87px 0 40px;
   }
 }
@@ -1321,40 +1321,40 @@ figure {
   object-position: center;
   width: 100%;
 }
-.article__date {
+.article__date, .interview__date {
   font-size: 20px;
   margin-bottom: 10px;
 }
 @media screen and (max-width: 768px) {
-  .article__date {
+  .article__date, .interview__date {
     font-size: 14px;
     margin-bottom: 20px;
   }
 }
 
-.article__title {
+.article__title, .interview__title {
   max-width: 1070px;
   margin-bottom: 10px;
 }
 @media screen and (max-width: 768px) {
-  .article__title {
+  .article__title, .interview__title {
     margin-bottom: 5px;
   }
 }
 
-.articles__categories {
+.articles__categories, .interview__categories {
   display: flex;
   margin-bottom: 30px;
 }
 @media screen and (max-width: 768px) {
-  .articles__categories {
+  .articles__categories, .interview__categories {
     flex-wrap: wrap;
     margin-bottom: 20px;
     margin-top: -5px;
   }
 }
 
-.articles__category {
+.articles__category, .interview__category {
   background-color: var(--clr-blue);
   border-radius: 57px;
   padding: 16px 20px;
@@ -1363,16 +1363,18 @@ figure {
   font-size: 14px;
 }
 @media screen and (max-width: 768px) {
-  .articles__category {
+  .articles__category, .interview__category {
     margin-top: 5px;
   }
 }
 
-.articles__category + .articles__category {
+.articles__category + .articles__category,
+.interview__category + .interview__category {
   margin-left: 10px;
 }
 @media screen and (max-width: 768px) {
-  .articles__category + .articles__category {
+  .articles__category + .articles__category,
+  .interview__category + .interview__category {
     margin-left: 0;
   }
 }
@@ -1424,31 +1426,33 @@ figure {
   }
 }
 
-.article__text {
+.article__text, .interview__text {
   font-size: 20px;
   margin-top: 10px;
 }
 @media screen and (max-width: 768px) {
-  .article__text {
+  .article__text, .interview__text {
     font-size: 14px;
     margin-top: 15px;
   }
 }
 
-.article__text--required {
+.article__text--required, .interview__text--required {
   font-size: 24px;
 }
 @media screen and (max-width: 768px) {
-  .article__text--required {
+  .article__text--required, .interview__text--required {
     font-size: 16px;
   }
 }
 
-.article__text p + p {
+.article__text p + p,
+.interview__text p + p {
   margin-top: 10px;
 }
 @media screen and (max-width: 768px) {
-  .article__text p + p {
+  .article__text p + p,
+  .interview__text p + p {
     margin-top: 5px;
   }
 }
@@ -1518,13 +1522,13 @@ figure {
   }
 }
 
-.article__btns {
+.article__btns, .interview__btns {
   display: flex;
   align-items: center;
   justify-content: center;
 }
 @media screen and (max-width: 768px) {
-  .article__btns {
+  .article__btns, .interview__btns {
     flex-direction: column;
   }
 }
@@ -1542,11 +1546,11 @@ figure {
   }
 }
 
-.article__btn--gray.btn {
+.article__btn--gray.btn, .interview__btn--gray.btn {
   margin-left: 30px;
 }
 @media screen and (max-width: 768px) {
-  .article__btn--gray.btn {
+  .article__btn--gray.btn, .interview__btn--gray.btn {
     margin-top: 10px;
     margin-left: 0;
     min-width: 300px;
@@ -2754,6 +2758,15 @@ button.dropdown__btn {
   background-position: center;
 }
 
+.footer__item-contacts > ul + ul {
+  margin-top: 15px;
+}
+@media screen and (max-width: 768px) {
+  .footer__item-contacts > ul + ul {
+    margin-top: 10px;
+  }
+}
+
 .footer__item-contacts .footer_phone::after {
   background-image: url("../img/footer-phone.png");
 }
@@ -3056,6 +3069,96 @@ a.footer__politics {
   line-height: normal;
   border: 1px solid var(--clr-green);
   border-radius: 25px;
+}
+
+.another-interview {
+  padding: 75px 0 70px;
+}
+@media screen and (max-width: 768px) {
+  .another-interview {
+    padding: 40px 0 80px;
+  }
+}
+.another-interview .reports__list {
+  margin-bottom: 0;
+}
+
+.another-interview__title {
+  text-align: center;
+  margin-bottom: 30px;
+}
+@media screen and (max-width: 768px) {
+  .another-interview__title {
+    text-align: left;
+    margin-bottom: 15px;
+  }
+}
+
+.interview__title {
+  max-width: 900px;
+}
+
+.interview__categories {
+  margin-bottom: 50px;
+}
+@media screen and (max-width: 768px) {
+  .interview__categories {
+    margin-bottom: 20px;
+  }
+}
+
+.interview__content {
+  margin-bottom: 50px;
+}
+@media screen and (max-width: 768px) {
+  .interview__content {
+    margin-bottom: 20px;
+  }
+}
+
+.interview__video.video {
+  position: relative;
+  width: 100%;
+  height: 0;
+  overflow: hidden;
+  padding-bottom: 56.25%;
+  margin-bottom: 50px;
+}
+@media screen and (max-width: 768px) {
+  .interview__video.video {
+    margin-bottom: 15px;
+  }
+}
+.interview__video.video .video__preview {
+  z-index: 1;
+}
+.interview__video.video .video__btn {
+  z-index: 1;
+}
+.interview__video.video .video__elem {
+  position: absolute;
+  top: 0;
+  left: 0;
+  width: 100%;
+  height: 100%;
+}
+
+.interview__text + .interview__text {
+  margin-top: 10px;
+}
+@media screen and (max-width: 768px) {
+  .interview__text + .interview__text {
+    margin-top: 5px;
+  }
+}
+
+.interview__share {
+  margin-bottom: 50px;
+}
+@media screen and (max-width: 768px) {
+  .interview__share {
+    margin-bottom: 30px;
+  }
 }
 
 .logo {
@@ -5445,6 +5548,111 @@ a.footer__politics {
   color: inherit;
 }
 
+.price__table table {
+  width: 100%;
+  border-collapse: collapse;
+  border-spacing: 0;
+}
+.price__table thead th {
+  font-size: 20px;
+  font-weight: 500;
+  text-align: center;
+  background-color: #BDD5B3;
+  padding: 20px 10px;
+  border-radius: 5px;
+}
+@media screen and (max-width: 768px) {
+  .price__table thead th {
+    display: none;
+  }
+}
+.price__table thead th + th {
+  border-left: 2px solid #ffffff;
+}
+.price__table thead th:nth-child(1) {
+  width: 47.68%;
+}
+@media screen and (max-width: 768px) {
+  .price__table thead th:nth-child(1) {
+    width: initial;
+  }
+}
+.price__table thead th:nth-child(2) {
+  width: 24.01%;
+}
+@media screen and (max-width: 768px) {
+  .price__table thead th:nth-child(2) {
+    width: initial;
+  }
+}
+.price__table thead th:nth-child(3) {
+  width: 28.3%;
+}
+@media screen and (max-width: 768px) {
+  .price__table thead th:nth-child(3) {
+    width: initial;
+  }
+}
+
+.price__table tbody tr {
+  font-size: 20px;
+  border-radius: 5px;
+}
+@media screen and (max-width: 768px) {
+  .price__table tbody tr {
+    font-size: 14px;
+    display: block;
+    padding: 10px;
+    border-radius: 10px;
+  }
+}
+
+.price__table tbody tr td:first-child {
+  border-top-left-radius: 5px;
+  border-bottom-left-radius: 5px;
+}
+@media screen and (max-width: 768px) {
+  .price__table tbody tr td:first-child {
+    border: none;
+  }
+}
+.price__table tbody tr td:nth-child(2) {
+  text-align: center;
+}
+@media screen and (max-width: 768px) {
+  .price__table tbody tr td:nth-child(2) {
+    text-align: left;
+  }
+}
+.price__table tbody tr td:last-child {
+  border-top-right-radius: 5px;
+  border-bottom-right-radius: 5px;
+  text-align: center;
+}
+@media screen and (max-width: 768px) {
+  .price__table tbody tr td:last-child {
+    text-align: left;
+    border: none;
+  }
+}
+
+.price__table tbody td {
+  padding: 15px 10px 15px 40px;
+}
+@media screen and (max-width: 768px) {
+  .price__table tbody td {
+    display: block;
+    padding: 0;
+  }
+}
+.price__table tbody td + td {
+  margin-top: 5px;
+}
+
+.price__table tbody tr:nth-child(even) {
+  border-radius: 5px;
+  background-color: var(--clr-white-light);
+}
 .results {
   padding: 123px 0 40px;
 }
