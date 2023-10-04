@@ -214,7 +214,8 @@
                 </ul>
               </li>
               <li>
-                <a href="https://shop.heavenly-lotus.com/?utm_source=sait&utm_medium=zerkoz">Квантовые голографические
+                <a href="https://shop.heavenly-lotus.com/?utm_source=sait&utm_medium=zerkoz" target="_blank">Квантовые
+                  голографические
                   модули</a>
               </li>
             </ul>
@@ -271,7 +272,7 @@
 
       <!-- search -->
       <div class="dropdown__search search">
-        <form action="#">
+        <form action="#" class="js-search-form">
           <div class="search__block">
             <input type="text" class="search__input" placeholder="Я ищу">
 
@@ -442,10 +443,11 @@
           <div class="dropdown__elem">
             <ul>
               <li>
-                <a href="#">Квантовые<br>голографические модули</a>
+                <a href="https://shop.heavenly-lotus.com/?utm_source=sait&utm_medium=zerkoz"
+                  target="_blank">Квантовые<br>голографические модули</a>
               </li>
               <li>
-                <a href="#">Сотрудничество</a>
+                <a href=" #">Сотрудничество</a>
               </li>
             </ul>
           </div>
@@ -463,9 +465,7 @@
           <!-- dzen -->
           <li class="socials__item">
             <a href="https://dzen.ru/ciot_sfera?" class="socials__link" target="blank">
-              <svg class="socials__icon" viewBox="0 0 35 35">
-                <use xlink:href="img/icons/sprite.svg#facebook"></use>
-              </svg>
+              <img class="socials__icon" src="img/dzen.png" />
             </a>
           </li>
           <!-- instagram https://instagram.com/sferamsk?igshid=MzRlODBiNWFlZA==-->
@@ -505,62 +505,158 @@
 
 </header>
         <section class="hero">
-  <div class="container">
-    <h1 class="hero__title">
-      ТЕСТИРОВАНИЕ<br class="br-mobile">ЧЕЛОВЕКА <br> <span>НА АППАРАТНО-ПРОГРАММНЫХ ДИАГНОСТИЧЕСКИХ КОМПЛЕКСАХ</span>
-    </h1>
-    <div class="hero__desc">
-      Всестороннее обследование с помощью современных Аппаратно-программных диагностических комплексов позволяет
-      получить
-      целостную картину не только о функциональном состоянии организма, но и об энергетическом потенциале, уровне
-      развития
-      сознания
-    </div>
-  </div>
-
-  <div class="hero__block">
-    <div class="hero__img">
-      <picture>
-        <source media="(min-width: 768px)" srcset="img/hero@desktop.png">
-        <img class="hero__img" src="img/hero@mobile.png" alt="">
-      </picture>
-    </div>
-
-    <div class="container">
-      <!-- кнопка  -->
-      <button class="btn hero__btn">Записаться на тестирование</button>
-      <!-- кнопка end  -->
 
 
-      <div class="hero__video-wrap">
-        <!-- блок с видео  -->
-        <button class="hero__video">
-
-          <video autoplay muted loop playsinline preload="yes" class="hero__video-elem">
-            <source src="vendor/hero_play.mp4" type="video/mp4">
-            Your browser does not support HTML5 video.
-          </video>
+  <div class="hero__slider">
+    <!-- Основной контейнер слайдера -->
+    <!-- если хотим поменять ширину слайдов просто меняем ширину контейнера -->
+    <div class="hero__swiper swiper swiper-no-swiping">
+      <!-- swiper-no-swiping для отключения swipe -->
+      <!-- Дополнительная необходимая обертка - это то что будет крутиться -->
 
 
-          <svg class="hero__video-icon" viewBox="0 0 60 60">
-            <use xlink:href="img/icons/sprite.svg#play"></use>
-          </svg>
 
 
-        </button>
-        <!-- блок с видео end -->
+      <div class="swiper-wrapper">
+        <!-- Слайд 1 -->
+        <div class="swiper-slide hero__card">
+          <div class="container">
+            <h2 class="hero__title">
+              СЕАНСЫ В <span>ЗЕРКАЛАХ КОЗЫРЕВА</span>
+              БИОИНФОРМАЦИОННЫЙ ГАРМОНИЗАТОР БИГ
+            </h2>
+            <div class="hero__desc">
+              Восстановление энергии, оздоровление, развитие<br>
+              творческого потенциала при помощи магнитного<br>поля Земли
+            </div>
+          </div>
+
+          <div class="hero__block">
+            <div class="hero__img">
+              <picture>
+                <source media="(min-width: 768px)" srcset="img/hero@desktop.png">
+                <img class="hero__img" src="img/hero@mobile.png" alt="">
+              </picture>
+            </div>
+
+            <div class="container">
+              <!-- кнопка  -->
+              <button class="btn hero__btn">Записаться на тестирование</button>
+              <!-- кнопка end  -->
 
 
-        <div class="hero__video-desc">
-          Посмотрите видео-<br>презентацию компании
+              <div class="hero__video-wrap">
+                <!-- блок с видео  -->
+                <button class="hero__video">
+
+                  <video autoplay muted loop playsinline preload="yes" class="hero__video-elem">
+                    <source src="vendor/hero_play.mp4" type="video/mp4">
+                    Your browser does not support HTML5 video.
+                  </video>
+
+
+                  <svg class="hero__video-icon" viewBox="0 0 60 60">
+                    <use xlink:href="img/icons/sprite.svg#play"></use>
+                  </svg>
+
+
+                </button>
+                <!-- блок с видео end -->
+
+
+                <div class="hero__video-desc">
+                  Посмотрите видео-<br>презентацию компании
+                </div>
+
+
+              </div>
+            </div>
+
+
+          </div>
         </div>
+        <!-- Слайд 1 end-->
+        <!-- Слайд 2 -->
+        <div class="swiper-slide hero__card">
+          <div class="container">
+            <h2 class="hero__title">
+              ТЕСТИРОВАНИЕ<br class="br-mobile">ЧЕЛОВЕКА <br> <span>НА АППАРАТНО-ПРОГРАММНЫХ ДИАГНОСТИЧЕСКИХ
+                КОМПЛЕКСАХ</span>
+            </h2>
+            <div class="hero__desc">
+              Всестороннее обследование с помощью современных Аппаратно-программных диагностических комплексов позволяет
+              получить
+              целостную картину не только о функциональном состоянии организма, но и об энергетическом потенциале,
+              уровне
+              развития
+              сознания
+            </div>
+          </div>
 
+          <div class="hero__block">
+            <div class="hero__img">
+              <picture>
+                <source media="(min-width: 768px)" srcset="img/hero@desktop.png">
+                <img class="hero__img" src="img/hero@mobile.png" alt="">
+              </picture>
+            </div>
+
+            <div class="container">
+              <!-- кнопка  -->
+              <button class="btn hero__btn">Записаться на тестирование</button>
+              <!-- кнопка end  -->
+
+
+              <div class="hero__video-wrap">
+                <!-- блок с видео  -->
+                <button class="hero__video">
+
+                  <video autoplay muted loop playsinline preload="yes" class="hero__video-elem">
+                    <source src="vendor/hero_play.mp4" type="video/mp4">
+                    Your browser does not support HTML5 video.
+                  </video>
+
+
+                  <svg class="hero__video-icon" viewBox="0 0 60 60">
+                    <use xlink:href="img/icons/sprite.svg#play"></use>
+                  </svg>
+
+
+                </button>
+                <!-- блок с видео end -->
+
+
+                <div class="hero__video-desc">
+                  Посмотрите видео-<br>презентацию компании
+                </div>
+
+
+              </div>
+            </div>
+
+
+          </div>
+        </div>
+        <!-- Слайд 2 end-->
 
       </div>
+
+
+    </div>
+
+    <div class="container hero__pagination--container">
+      <!-- Если нам нужна нумерация страниц -->
+      <div class="hero__pagination"></div>
+      <!-- Если нам нужна полоса прокрутки -->
+      <!-- <div class="swiper-scrollbar"></div> -->
     </div>
 
 
   </div>
+
+
+
+
 
 </section>
         <section class="sessions">
@@ -711,24 +807,33 @@
     </div>
 
     <div class="question__form form">
-      <form action="#" class="form__elem">
+      <form action="#" class="js-question-form form__elem">
 
         <div class="form__row">
           <div class="form__block">
-            <input class="form__input" type="text" name="username" placeholder="Введите ваше имя">
+            <input class="form__input js-name-input" type="text" name="username" placeholder="Введите ваше имя">
           </div>
           <div class="form__block">
-            <input class="form__input" type="tel" name="phone" placeholder="Ваш номер телефона">
+            <input class="form__input js-phone-input" type="text" name="phone" placeholder="Ваш номер телефона">
+          </div>
+          <div class="form__block form__error--mobile">
+            <div class="form__error js-form-error"></div>
           </div>
           <div class="form__block">
-            <button class="form__btn btn">Отправить</button>
+            <button class="form__btn btn js-btn">Отправить</button>
+          </div>
+        </div>
+
+        <div class="form__row form__error--desktop  ">
+          <div class="form__block form__block-fill">
+            <div class="form__error js-form-error"></div>
           </div>
         </div>
 
         <div class="form__row">
           <div class="form__block form__block-fill">
             <label class="form__checkbox-wrap">
-              <input type="checkbox" class="form__checkbox" name="agree">
+              <input type="checkbox" class="form__checkbox js-form-checkbox" name="agree">
               <div class="form__checkbox-custom">
 
                 <svg class="form__checkbox-custom-icon" viewBox="0 0 15 15">
@@ -2805,7 +2910,7 @@
 
 
 </section>
-        <section class="news">
+        <section class="news @@clazz">
   <div class="container">
     <h2 class="news__title">ЧИТАЙТЕ НОВОСТИ КОМПАНИИ</h2>
 
@@ -2868,7 +2973,7 @@
       </div>
 
       <div class="mailing__form form">
-        <form action="#" class="form__elem">
+        <form action="#" class="js-mailing-form form__elem">
 
           <div class="form__row form__row--mailing">
             <div class="form__block">
@@ -3487,9 +3592,7 @@
             <!-- dzen -->
             <li class="socials__item">
               <a href="https://dzen.ru/ciot_sfera?" class="socials__link" target="blank">
-                <svg class="socials__icon" viewBox="0 0 35 35">
-                  <use xlink:href="img/icons/sprite.svg#facebook"></use>
-                </svg>
+                <img class="socials__icon" src="img/dzen.png" />
               </a>
             </li>
             <!-- instagram https://instagram.com/sferamsk?igshid=MzRlODBiNWFlZA==-->
