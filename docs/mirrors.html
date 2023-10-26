@@ -15,6 +15,27 @@
   <title>Зеркала | Научно-производственная компания ЦИОТ «СФЕРА»</title>
 
   <!-- тут не забыть подключить фавикон  -->
+  <link rel="apple-touch-icon" sizes="57x57" href="img/favicon/apple-icon-57x57.png">
+  <link rel="apple-touch-icon" sizes="60x60" href="img/favicon/apple-icon-60x60.png">
+  <link rel="apple-touch-icon" sizes="72x72" href="img/favicon/apple-icon-72x72.png">
+  <link rel="apple-touch-icon" sizes="76x76" href="img/favicon/apple-icon-76x76.png">
+  <link rel="apple-touch-icon" sizes="114x114" href="img/favicon/apple-icon-114x114.png">
+  <link rel="apple-touch-icon" sizes="120x120" href="img/favicon/apple-icon-120x120.png">
+  <link rel="apple-touch-icon" sizes="144x144" href="img/favicon/apple-icon-144x144.png">
+  <link rel="apple-touch-icon" sizes="152x152" href="img/favicon/apple-icon-152x152.png">
+  <link rel="apple-touch-icon" sizes="180x180" href="img/favicon/apple-icon-180x180.png">
+  <link rel="icon" type="image/png" sizes="192x192" href="img/favicon/android-icon-192x192.png">
+  <link rel="icon" type="image/png" sizes="32x32" href="img/favicon/favicon-32x32.png">
+  <link rel="icon" type="image/png" sizes="96x96" href="img/favicon/favicon-96x96.png">
+  <link rel="icon" type="image/png" sizes="16x16" href="img/favicon/favicon-16x16.png">
+  <link rel="manifest" href="img/favicon/manifest.json">
+  <meta name="msapplication-TileColor" content="#ffffff">
+  <meta name="msapplication-TileImage" content="/ms-icon-144x144.png">
+  <meta name="theme-color" content="#ffffff">
+
+
+
+
   <script src="https://api-maps.yandex.ru/v3/?apikey=3f99c73b-8f2f-478f-9f0e-2307c5eb5610&lang=ru_RU"></script>
 </head>
 
@@ -66,7 +87,8 @@
                 </a>
               </li>
               <li>
-                <a href="articles.html">
+                <!-- articles.html -->
+                <a href="#">
                   Статьи
                 </a>
               </li>
@@ -127,19 +149,23 @@
               <a href="about.html">О нас</a>
             </li>
             <li>
-              <a href="history.html">История компании</a>
+              <!-- history.html -->
+              <a href="#">История компании</a>
             </li>
             <li>
               <a href="documents.html">Документы и сертификаты</a>
             </li>
-            <li current-menu-item">
-              <a href="commands.html">Команда</a>
-            </li class="current-menu-item">
             <li>
-              <a href="history_of_big.html">История БИГ</a>
+              <!-- commands.html -->
+              <a href="#">Команда</a>
             </li>
             <li>
-              <a href="safety_mirrors_big">Безопасность зеркал Козырева БИГ</a>
+              <!-- history_of_big.html -->
+              <a href="#">История БИГ</a>
+            </li>
+            <li>
+              <!-- safety_mirrors_big -->
+              <a href="#">Безопасность зеркал Козырева БИГ</a>
             </li>
           </ul>
         </li>
@@ -227,10 +253,12 @@
           <a href="review.html">Отзывы</a>
         </li>
         <li>
-          <a href="articles.html">Статьи</a>
+          <!-- articles.html -->
+          <a href="#">Статьи</a>
         </li>
         <li>
-          <a href="partnership.html">Сотрудничество</a>
+          <!-- partnership.html -->
+          <a href="#">Сотрудничество</a>
         </li>
       </ul>
     </nav>
@@ -240,11 +268,11 @@
     <!-- .header__btns -->
     <div class="header__btns">
       <!-- search -->
-      <button class="header__search js-toogle">
+      <!-- <button class="header__search js-toogle">
         <svg viewBox="0 0 24 24">
           <use xlink:href="img/icons/sprite.svg#search"></use>
         </svg>
-      </button>
+      </button> -->
       <!-- end search  -->
 
       <!-- toggle  -->
@@ -256,7 +284,7 @@
       <!-- header__contacts -->
       <div class="header__contacts">
         <a class="header__phone" href="tel:+79774528747">+7 (977) 452 87 47</a>
-        <button class="header__btn js-request-call">Заказать звонок</button>
+        <button class="header__btn popup-link" data-popup="modal-call">Заказать звонок</button>
       </div>
       <!-- header__contacts end-->
 
@@ -267,11 +295,11 @@
 
 
 
-  <div class="dropdown ">
+  <div class="dropdown">
     <div class="container">
 
       <!-- search -->
-      <div class="dropdown__search search">
+      <!-- <div class="dropdown__search search">
         <form action="#" class="js-search-form">
           <div class="search__block">
             <input type="text" class="search__input" placeholder="Я ищу">
@@ -283,7 +311,7 @@
             </button>
           </div>
         </form>
-      </div>
+      </div> -->
       <!-- search end  -->
 
       <!-- .dropdown menu -->
@@ -458,10 +486,10 @@
       <!-- .dropdown__contacts -->
       <div class="dropdown__contacts">
         <a class="dropdown__phone" href="tel:+79774528747">+7 (977) 452 87 47</a>
-        <button class="dropdown__btn js-request-call">Заказать звонок</button>
+        <button class="dropdown__btn popup-link" data-popup="modal-call"">Заказать звонок</button>
 
         <!-- socials -->
-        <ul class="dropdown__socials socials">
+        <ul class=" dropdown__socials socials">
           <!-- dzen -->
           <li class="socials__item">
             <a href="https://dzen.ru/ciot_sfera?" class="socials__link" target="blank">
@@ -492,8 +520,8 @@
               </svg>
             </a>
           </li>
-        </ul>
-        <!-- socials -->
+          </ul>
+          <!-- socials -->
 
 
       </div>
@@ -520,14 +548,14 @@
           Восполните свое энергетическое пространство, раскройте и реализуйте профессиональный, творческий потенциал.
         </div>
         <a href="#" class="btn effect__btn">Выбрать модель зеркала</a>
-        <a href="#" class="effect__link">
+        <a href="price.html" class="effect__link">
           Смотреть прайс →
         </a>
       </div>
       <div class="effect__elem">
         <img src="img/effect-bg.png" alt="">
         <div class="effect__video">
-          <button class="effect__video-btn">
+          <button class="effect__video-btn popup-link" data-popup="modal-video-mirrors">
             <svg class="effect__video-btn-icon" viewBox="0 0 70 70">
               <use xlink:href="img/icons/sprite.svg#play-effect"></use>
             </svg>
@@ -592,7 +620,8 @@
       </li>
     </ul>
 
-    <a href="#" class="btn btn-bordered stage__link">Книга о том, что происходит в зеркалах</a>
+    <a href="vendor/book.pdf" class="btn btn-bordered stage__link" target="_blank">Книга о том, что происходит в
+      зеркалах</a>
 
 
   </div>
@@ -744,11 +773,7 @@
                   <img src="img/variant1.png" alt="" class="variants__img">
                 </div>
                 <!-- Слайд 1 end-->
-                <!-- Слайд 1 -->
-                <div class="swiper-slide variants__card">
-                  <img src="img/variant2.png" alt="" class="variants__img">
-                </div>
-                <!-- Слайд 1 end-->
+
               </div>
 
 
@@ -773,7 +798,9 @@
               Горизонтальная цилиндрическая установка, укомплектованная пассивным импульсным резонатором оригинальной
               конструкции
             </div>
-            <button class="btn variants__btn" data-variant="БИГ-Ги">Записаться на сеанс</button>
+            <button class="btn variants__btn popup-link" data-popup="modal-modifications"
+              data-variant="БИГ-Ги">Записаться на
+              сеанс</button>
             <a href="#" class="variants__link">Узнать больше о Зеркале Козырева БИГ →</a>
           </div>
         </div>
@@ -794,14 +821,10 @@
               <div class="swiper-wrapper">
                 <!-- Слайд 1 -->
                 <div class="swiper-slide variants__card">
-                  <img src="img/variant1.png" alt="" class="variants__img">
-                </div>
-                <!-- Слайд 1 end-->
-                <!-- Слайд 1 -->
-                <div class="swiper-slide variants__card">
                   <img src="img/variant2.png" alt="" class="variants__img">
                 </div>
                 <!-- Слайд 1 end-->
+
               </div>
 
 
@@ -826,7 +849,9 @@
               Горизонтальная цилиндрическая установка, укомплектованная параболическим резонатором с кристаллическим
               модулем
             </div>
-            <button class="btn variants__btn" data-variant="БИГ-КР">Записаться на сеанс</button>
+            <button class="btn variants__btn popup-link" data-popup="modal-modifications"
+              data-variant="БИГ-КР">Записаться на
+              сеанс</button>
             <a href="#" class="variants__link">Узнать больше о Зеркале Козырева БИГ →</a>
           </div>
         </div>
@@ -847,12 +872,7 @@
               <div class="swiper-wrapper">
                 <!-- Слайд 1 -->
                 <div class="swiper-slide variants__card">
-                  <img src="img/variant1.png" alt="" class="variants__img">
-                </div>
-                <!-- Слайд 1 end-->
-                <!-- Слайд 1 -->
-                <div class="swiper-slide variants__card">
-                  <img src="img/variant2.png" alt="" class="variants__img">
+                  <img src="img/variant3.png" alt="" class="variants__img">
                 </div>
                 <!-- Слайд 1 end-->
               </div>
@@ -880,7 +900,9 @@
               оригинальной
               конструкции
             </div>
-            <button class="btn variants__btn" data-variant="БИГ-Г2Р">Записаться на сеанс</button>
+            <button class="btn variants__btn popup-link" data-popup="modal-modifications"
+              data-variant="БИГ-Г2Р">Записаться на
+              сеанс</button>
             <a href="#" class="variants__link">Узнать больше о Зеркале Козырева БИГ →</a>
           </div>
         </div>
@@ -901,12 +923,7 @@
               <div class="swiper-wrapper">
                 <!-- Слайд 1 -->
                 <div class="swiper-slide variants__card">
-                  <img src="img/variant1.png" alt="" class="variants__img">
-                </div>
-                <!-- Слайд 1 end-->
-                <!-- Слайд 1 -->
-                <div class="swiper-slide variants__card">
-                  <img src="img/variant2.png" alt="" class="variants__img">
+                  <img src="img/variant4.png" alt="" class="variants__img">
                 </div>
                 <!-- Слайд 1 end-->
               </div>
@@ -932,7 +949,9 @@
             <div class="varints__desc">
               Горизонтальная цилиндрическая установка, укомплектованная офсетным резонатором
             </div>
-            <button class="btn variants__btn" data-variant="БИГ-Г ОФ">Записаться на сеанс</button>
+            <button class="btn variants__btn popup-link" data-popup="modal-modifications"
+              data-variant="БИГ-Г ОФ">Записаться
+              на сеанс</button>
             <a href="#" class="variants__link">Узнать больше о Зеркале Козырева БИГ →</a>
           </div>
         </div>
@@ -953,12 +972,7 @@
               <div class="swiper-wrapper">
                 <!-- Слайд 1 -->
                 <div class="swiper-slide variants__card">
-                  <img src="img/variant1.png" alt="" class="variants__img">
-                </div>
-                <!-- Слайд 1 end-->
-                <!-- Слайд 1 -->
-                <div class="swiper-slide variants__card">
-                  <img src="img/variant2.png" alt="" class="variants__img">
+                  <img src="img/variant5.png" alt="" class="variants__img">
                 </div>
                 <!-- Слайд 1 end-->
               </div>
@@ -985,7 +999,9 @@
               Горизонтальная цилиндрическая установка, укомплектованная пассивным импульсным резонатором оригинальной
               конструкции
             </div>
-            <button class="btn variants__btn" data-variant="БИГ-Г Пф">Записаться на сеанс</button>
+            <button class="btn variants__btn popup-link" data-popup="modal-modifications"
+              data-variant="БИГ-Г Пф">Записаться
+              на сеанс</button>
             <a href="#" class="variants__link">Узнать больше о Зеркале Козырева БИГ →</a>
           </div>
         </div>
@@ -1006,14 +1022,10 @@
               <div class="swiper-wrapper">
                 <!-- Слайд 1 -->
                 <div class="swiper-slide variants__card">
-                  <img src="img/variant1.png" alt="" class="variants__img">
+                  <img src="img/variant6.png" alt="" class="variants__img">
                 </div>
                 <!-- Слайд 1 end-->
-                <!-- Слайд 1 -->
-                <div class="swiper-slide variants__card">
-                  <img src="img/variant2.png" alt="" class="variants__img">
-                </div>
-                <!-- Слайд 1 end-->
+
               </div>
 
 
@@ -1039,7 +1051,9 @@
               «оргонной»
               терапии В. Райха.
             </div>
-            <button class="btn variants__btn" data-variant="БИГ-МСл">Записаться на сеанс</button>
+            <button class="btn variants__btn popup-link" data-popup="modal-modifications"
+              data-variant="БИГ-МСл">Записаться на
+              сеанс</button>
             <a href="#" class="variants__link">Узнать больше о Зеркале Козырева БИГ →</a>
           </div>
         </div>
@@ -1060,14 +1074,10 @@
               <div class="swiper-wrapper">
                 <!-- Слайд 1 -->
                 <div class="swiper-slide variants__card">
-                  <img src="img/variant1.png" alt="" class="variants__img">
+                  <img src="img/variant7.png" alt="" class="variants__img">
                 </div>
                 <!-- Слайд 1 end-->
-                <!-- Слайд 1 -->
-                <div class="swiper-slide variants__card">
-                  <img src="img/variant2.png" alt="" class="variants__img">
-                </div>
-                <!-- Слайд 1 end-->
+
               </div>
 
 
@@ -1095,7 +1105,9 @@
               систем,
               психического состояния посетителя
             </div>
-            <button class="btn variants__btn" data-variant="БИГ-В">Записаться на сеанс</button>
+            <button class="btn variants__btn popup-link" data-popup="modal-modifications"
+              data-variant="БИГ-В">Записаться на
+              сеанс</button>
             <a href="#" class="variants__link">Узнать больше о Зеркале Козырева БИГ →</a>
           </div>
         </div>
@@ -1116,14 +1128,10 @@
               <div class="swiper-wrapper">
                 <!-- Слайд 1 -->
                 <div class="swiper-slide variants__card">
-                  <img src="img/variant1.png" alt="" class="variants__img">
+                  <img src="img/variant8.png" alt="" class="variants__img">
                 </div>
                 <!-- Слайд 1 end-->
-                <!-- Слайд 1 -->
-                <div class="swiper-slide variants__card">
-                  <img src="img/variant2.png" alt="" class="variants__img">
-                </div>
-                <!-- Слайд 1 end-->
+
               </div>
 
 
@@ -1149,7 +1157,9 @@
               «оргонной»
               терапии В. Райха.
             </div>
-            <button class="btn variants__btn" data-variant="БИГ-БСп">Записаться на сеанс</button>
+            <button class="btn variants__btn popup-link" data-popup="modal-modifications"
+              data-variant="БИГ-БСп">Записаться на
+              сеанс</button>
             <a href="#" class="variants__link">Узнать больше о Зеркале Козырева БИГ →</a>
           </div>
         </div>
@@ -1170,14 +1180,10 @@
               <div class="swiper-wrapper">
                 <!-- Слайд 1 -->
                 <div class="swiper-slide variants__card">
-                  <img src="img/variant1.png" alt="" class="variants__img">
+                  <img src="img/variant9.png" alt="" class="variants__img">
                 </div>
                 <!-- Слайд 1 end-->
-                <!-- Слайд 1 -->
-                <div class="swiper-slide variants__card">
-                  <img src="img/variant2.png" alt="" class="variants__img">
-                </div>
-                <!-- Слайд 1 end-->
+
               </div>
 
 
@@ -1203,7 +1209,9 @@
               расположенных в
               определенной последовательности
             </div>
-            <button class="btn variants__btn" data-variant="БИГ-М8">Записаться на сеанс</button>
+            <button class="btn variants__btn popup-link" data-popup="modal-modifications"
+              data-variant="БИГ-М8">Записаться на
+              сеанс</button>
             <a href="#" class="variants__link">Узнать больше о Зеркале Козырева БИГ →</a>
           </div>
         </div>
@@ -1224,12 +1232,7 @@
               <div class="swiper-wrapper">
                 <!-- Слайд 1 -->
                 <div class="swiper-slide variants__card">
-                  <img src="img/variant1.png" alt="" class="variants__img">
-                </div>
-                <!-- Слайд 1 end-->
-                <!-- Слайд 1 -->
-                <div class="swiper-slide variants__card">
-                  <img src="img/variant2.png" alt="" class="variants__img">
+                  <img src="img/variant10.png" alt="" class="variants__img">
                 </div>
                 <!-- Слайд 1 end-->
               </div>
@@ -1259,7 +1262,9 @@
               слоёв
               специально подобранных диэлектриков.
             </div>
-            <button class="btn variants__btn" data-variant="БИГ-ЯН">Записаться на сеанс</button>
+            <button class="btn variants__btn popup-link" data-popup="modal-modifications"
+              data-variant="БИГ-ЯН">Записаться на
+              сеанс</button>
             <a href="#" class="variants__link">Узнать больше о Зеркале Козырева БИГ →</a>
           </div>
         </div>
@@ -1280,14 +1285,10 @@
               <div class="swiper-wrapper">
                 <!-- Слайд 1 -->
                 <div class="swiper-slide variants__card">
-                  <img src="img/variant1.png" alt="" class="variants__img">
+                  <img src="img/variant11.png" alt="" class="variants__img">
                 </div>
                 <!-- Слайд 1 end-->
-                <!-- Слайд 1 -->
-                <div class="swiper-slide variants__card">
-                  <img src="img/variant2.png" alt="" class="variants__img">
-                </div>
-                <!-- Слайд 1 end-->
+
               </div>
 
 
@@ -1312,7 +1313,9 @@
               обладает более четко
               выраженными свойствами нелинейных колебательных систем.
             </div>
-            <button class="btn variants__btn" data-variant="БИГ-Кл">Записаться на сеанс</button>
+            <button class="btn variants__btn popup-link" data-popup="modal-modifications"
+              data-variant="БИГ-Кл">Записаться на
+              сеанс</button>
             <a href="#" class="variants__link">Узнать больше о Зеркале Козырева БИГ →</a>
           </div>
         </div>
@@ -1333,14 +1336,10 @@
               <div class="swiper-wrapper">
                 <!-- Слайд 1 -->
                 <div class="swiper-slide variants__card">
-                  <img src="img/variant1.png" alt="" class="variants__img">
+                  <img src="img/variant12.png" alt="" class="variants__img">
                 </div>
                 <!-- Слайд 1 end-->
-                <!-- Слайд 1 -->
-                <div class="swiper-slide variants__card">
-                  <img src="img/variant2.png" alt="" class="variants__img">
-                </div>
-                <!-- Слайд 1 end-->
+
               </div>
 
 
@@ -1371,7 +1370,9 @@
               плотность
               энергоинформационного поля вблизи своей оси
             </div>
-            <button class="btn variants__btn" data-variant="БИГ-М6">Записаться на сеанс</button>
+            <button class="btn variants__btn popup-link" data-popup="modal-modifications"
+              data-variant="БИГ-М6">Записаться на
+              сеанс</button>
             <a href="#" class="variants__link">Узнать больше о Зеркале Козырева БИГ →</a>
           </div>
         </div>
@@ -1566,24 +1567,35 @@
       </div>
 
       <div class="mailing__form form">
-        <form action="#" class="js-mailing-form form__elem">
+        <form action="#" class="js-form form__elem">
 
           <div class="form__row">
             <div class="form__block">
-              <input class="form__input" type="text" name="username" placeholder="Введите ваше имя">
+              <input type="hidden" name="Форма" value="Запишитесь на сеанс">
+              <input class="form__input js-text-input" type="text" name="username" placeholder="Введите ваше имя">
             </div>
             <div class="form__block">
-              <input class="form__input" type="text" name="phone" placeholder="Ваш номер телефона">
+              <input class="form__input js-phone-input" type="text" name="phone" placeholder="Ваш номер телефона">
+            </div>
+            <div class="form__block form__error--mobile">
+              <div class="form__error js-form-error"></div>
             </div>
             <div class="form__block">
               <button class="form__btn btn js-btn">Оставить заявку</button>
             </div>
           </div>
 
+          <div class="form__row form__error--desktop">
+            <div class="form__block form__block-fill">
+              <div class="form__error js-form-error"></div>
+            </div>
+          </div>
+
+
           <div class="form__row">
             <div class="form__block form__block-fill">
               <label class="form__checkbox-wrap">
-                <input type="checkbox" class="form__checkbox" name="agree">
+                <input type="checkbox" class="form__checkbox js-form-checkbox" name="agree">
                 <div class="form__checkbox-custom">
 
                   <svg class="form__checkbox-custom-icon" viewBox="0 0 15 15">
@@ -1591,7 +1603,8 @@
                   </svg>
 
                 </div>
-                <span class="form__politics">Согласен <a href="#">с политикой конфиденциальности и обработкой моих
+                <span class="form__politics">Согласен <a href="politics.html">с политикой конфиденциальности и
+                    обработкой моих
                     персональных данных</a></span>
               </label>
             </div>
@@ -1618,26 +1631,83 @@
       <div class="swiper-wrapper" id="reviews-tab-gallery">
         <!-- slide 1 -->
         <div class="swiper-slide reviews__card">
-          <div class="reviews__card-img">
-            <img src="img/reviews1.png" alt="" class="reviews__card-img-elem" data-img="img/reviews1.png">
+
+          <!-- Главный контейнер слайдера -->
+          <div class="reviews-inner-slider swiper">
+            <!-- Обязательная оболочка -->
+            <ul class="reviews-inner__slider-list swiper-wrapper">
+              <!-- Слайды (c хэшом навигации)-->
+              <li class="reviews-inner__slider-item swiper-slide">
+
+                <!-- Контент внутри слайдера -->
+                <div class="reviews__card-img">
+                  <img src="img/a1_1.jpg" alt="" class="reviews__card-img-elem" data-img="img/a1_1.jpg">
+                </div>
+
+              </li>
+              <!-- Слайды (c хэшом навигации)-->
+              <li class="reviews-inner__slider-item swiper-slide">
+
+                <!-- Контент внутри слайдера -->
+                <div class="reviews__card-img">
+                  <img src="img/a1_2.jpg" alt="" class="reviews__card-img-elem" data-img="img/a1_2.jpg">
+                </div>
+
+              </li>
+
+
+            </ul>
+            <!-- Добавляем если нам нужна пагинация (параметр pagination)   -->
+            <div class="reviews-inner__pagination swiper-pagination"></div>
+
           </div>
 
-          <div class="reviews__card-autor">
-            Отзыв Константина Константинопольского
-          </div>
+
+          <!--
+              <div class="reviews__card-autor">
+                Отзыв Константина Константинопольского
+              </div> -->
 
         </div>
         <!-- slide 1 end  -->
 
         <!-- slide 2 -->
         <div class="swiper-slide reviews__card">
-          <div class="reviews__card-img">
-            <img src="img/reviews1.png" alt="" class="reviews__card-img-elem" data-img="img/reviews1.png">
+
+
+          <!-- Главный контейнер слайдера -->
+          <div class="reviews-inner-slider swiper">
+            <!-- Обязательная оболочка -->
+            <ul class="reviews-inner__slider-list swiper-wrapper">
+              <!-- Слайды (c хэшом навигации)-->
+              <li class="reviews-inner__slider-item swiper-slide">
+
+                <!-- Контент внутри слайдера -->
+                <div class="reviews__card-img">
+                  <img src="img/a2_1.jpg" alt="" class="reviews__card-img-elem" data-img="img/a2_1.jpg">
+                </div>
+
+              </li>
+              <!-- Слайды (c хэшом навигации)-->
+              <li class="reviews-inner__slider-item swiper-slide">
+
+                <!-- Контент внутри слайдера -->
+                <div class="reviews__card-img">
+                  <img src="img/a2_2.jpg" alt="" class="reviews__card-img-elem" data-img="img/a2_2.jpg">
+                </div>
+
+              </li>
+
+
+            </ul>
+            <!-- Добавляем если нам нужна пагинация (параметр pagination)   -->
+            <div class="reviews-inner__pagination swiper-pagination"></div>
+
           </div>
 
-          <div class="reviews__card-autor">
-            Отзыв Ирины Михайловой
-          </div>
+          <!-- <div class="reviews__card-autor">
+                Отзыв Ирины Михайловой
+              </div> -->
 
         </div>
         <!-- slide 2 end  -->
@@ -1646,13 +1716,39 @@
 
         <!-- slide 3 -->
         <div class="swiper-slide reviews__card">
-          <div class="reviews__card-img">
-            <img src="img/reviews1.png" alt="" class="reviews__card-img-elem" data-img="img/reviews1.png">
+          <!-- Главный контейнер слайдера -->
+          <div class="reviews-inner-slider swiper">
+            <!-- Обязательная оболочка -->
+            <ul class="reviews-inner__slider-list swiper-wrapper">
+              <!-- Слайды (c хэшом навигации)-->
+              <li class="reviews-inner__slider-item swiper-slide">
+
+                <!-- Контент внутри слайдера -->
+                <div class="reviews__card-img">
+                  <img src="img/a3_1.jpg" alt="" class="reviews__card-img-elem" data-img="img/a3_1.jpg">
+                </div>
+
+              </li>
+              <!-- Слайды (c хэшом навигации)-->
+              <li class="reviews-inner__slider-item swiper-slide">
+
+                <!-- Контент внутри слайдера -->
+                <div class="reviews__card-img">
+                  <img src="img/a3_2.jpg" alt="" class="reviews__card-img-elem" data-img="img/a3_2.jpg">
+                </div>
+
+              </li>
+
+
+            </ul>
+            <!-- Добавляем если нам нужна пагинация (параметр pagination)   -->
+            <div class="reviews-inner__pagination swiper-pagination"></div>
+
           </div>
 
-          <div class="reviews__card-autor">
-            Отзыв Юлии Сергеевой
-          </div>
+          <!-- <div class="reviews__card-autor">
+                Отзыв Юлии Сергеевой
+              </div> -->
 
         </div>
         <!-- slide 3 end  -->
@@ -1660,30 +1756,537 @@
 
         <!-- slide 4 -->
         <div class="swiper-slide reviews__card">
-          <div class="reviews__card-img">
-            <img src="img/reviews1.png" alt="" class="reviews__card-img-elem" data-img="img/reviews1.png">
+          <!-- Главный контейнер слайдера -->
+          <div class="reviews-inner-slider swiper">
+            <!-- Обязательная оболочка -->
+            <ul class="reviews-inner__slider-list swiper-wrapper">
+              <!-- Слайды (c хэшом навигации)-->
+              <li class="reviews-inner__slider-item swiper-slide">
+
+                <!-- Контент внутри слайдера -->
+                <div class="reviews__card-img">
+                  <img src="img/a4_1.jpg" alt="" class="reviews__card-img-elem" data-img="img/a4_1.jpg">
+                </div>
+
+              </li>
+              <!-- Слайды (c хэшом навигации)-->
+              <li class="reviews-inner__slider-item swiper-slide">
+
+                <!-- Контент внутри слайдера -->
+                <div class="reviews__card-img">
+                  <img src="img/a4_2.jpg" alt="" class="reviews__card-img-elem" data-img="img/a4_2.jpg">
+                </div>
+
+              </li><!-- Слайды (c хэшом навигации)-->
+
+            </ul>
+            <!-- Добавляем если нам нужна пагинация (параметр pagination)   -->
+            <div class="reviews-inner__pagination swiper-pagination"></div>
+
           </div>
 
-          <div class="reviews__card-autor">
-            Отзыв Константина Константинопольского
+          <!-- <div class="reviews__card-autor">
+                Отзыв Константина Константинопольского
+              </div> -->
+
+        </div>
+        <!-- slide 4 end  -->
+
+        <!-- slide 4 -->
+        <div class="swiper-slide reviews__card">
+          <!-- Главный контейнер слайдера -->
+          <div class="reviews-inner-slider swiper">
+            <!-- Обязательная оболочка -->
+            <ul class="reviews-inner__slider-list swiper-wrapper">
+              <li class="reviews-inner__slider-item swiper-slide">
+
+                <!-- Контент внутри слайдера -->
+                <div class="reviews__card-img">
+                  <img src="img/a4_3.jpg" alt="" class="reviews__card-img-elem" data-img="img/a4_3.jpg">
+                </div>
+
+              </li>
+              <!-- Слайды (c хэшом навигации)-->
+              <li class="reviews-inner__slider-item swiper-slide">
+
+                <!-- Контент внутри слайдера -->
+                <div class="reviews__card-img">
+                  <img src="img/a4_4.jpg" alt="" class="reviews__card-img-elem" data-img="img/a4_4.jpg">
+                </div>
+
+              </li>
+            </ul>
+            <!-- Добавляем если нам нужна пагинация (параметр pagination)   -->
+            <div class="reviews-inner__pagination swiper-pagination"></div>
+
           </div>
+
+          <!-- <div class="reviews__card-autor">
+                        Отзыв Константина Константинопольского
+                      </div> -->
 
         </div>
         <!-- slide 4 end  -->
 
         <!-- slide 5 -->
         <div class="swiper-slide reviews__card">
-          <div class="reviews__card-img">
-            <img src="img/reviews1.png" alt="" class="reviews__card-img-elem" data-img="img/reviews1.png">
+          <!-- Главный контейнер слайдера -->
+          <div class="reviews-inner-slider swiper">
+            <!-- Обязательная оболочка -->
+            <ul class="reviews-inner__slider-list swiper-wrapper">
+              <li class="reviews-inner__slider-item swiper-slide">
+
+                <!-- Контент внутри слайдера -->
+                <div class="reviews__card-img">
+                  <img src="img/a5_1.jpg" alt="" class="reviews__card-img-elem" data-img="img/a5_1.jpg">
+                </div>
+
+              </li>
+              <!-- Слайды (c хэшом навигации)-->
+              <li class="reviews-inner__slider-item swiper-slide">
+
+                <!-- Контент внутри слайдера -->
+                <div class="reviews__card-img">
+                  <img src="img/a5_2.jpg" alt="" class="reviews__card-img-elem" data-img="img/a5_2.jpg">
+                </div>
+
+              </li>
+            </ul>
+            <!-- Добавляем если нам нужна пагинация (параметр pagination)   -->
+            <div class="reviews-inner__pagination swiper-pagination"></div>
+
           </div>
 
-          <div class="reviews__card-autor">
-            Отзыв Виктории Ивановой
-          </div>
+          <!-- <div class="reviews__card-autor">
+                Отзыв Виктории Ивановой
+              </div> -->
 
         </div>
         <!-- slide 5 end  -->
 
+        <!-- slide 6 -->
+        <div class="swiper-slide reviews__card">
+          <!-- Главный контейнер слайдера -->
+          <div class="reviews-inner-slider swiper">
+            <!-- Обязательная оболочка -->
+            <ul class="reviews-inner__slider-list swiper-wrapper">
+              <li class="reviews-inner__slider-item swiper-slide">
+
+                <!-- Контент внутри слайдера -->
+                <div class="reviews__card-img">
+                  <img src="img/a6_1.jpg" alt="" class="reviews__card-img-elem" data-img="img/a6_1.jpg">
+                </div>
+
+              </li>
+              <!-- Слайды (c хэшом навигации)-->
+              <li class="reviews-inner__slider-item swiper-slide">
+
+                <!-- Контент внутри слайдера -->
+                <div class="reviews__card-img">
+                  <img src="img/a6_2.jpg" alt="" class="reviews__card-img-elem" data-img="img/a6_2.jpg">
+                </div>
+
+              </li>
+            </ul>
+            <!-- Добавляем если нам нужна пагинация (параметр pagination)   -->
+            <div class="reviews-inner__pagination swiper-pagination"></div>
+
+          </div>
+
+          <!-- <div class="reviews__card-autor">
+                        Отзыв Виктории Ивановой
+                      </div> -->
+
+        </div>
+        <!-- slide 6 end  -->
+
+        <!-- slide 7 -->
+        <div class="swiper-slide reviews__card">
+          <!-- Главный контейнер слайдера -->
+          <div class="reviews-inner-slider swiper">
+            <!-- Обязательная оболочка -->
+            <ul class="reviews-inner__slider-list swiper-wrapper">
+
+              <li class="reviews-inner__slider-item swiper-slide">
+                <!-- Контент внутри слайдера -->
+                <div class="reviews__card-img">
+                  <img src="img/a7_1.jpg" alt="" class="reviews__card-img-elem" data-img="img/a7_1.jpg">
+                </div>
+              </li>
+
+              <!-- Слайды (c хэшом навигации)-->
+              <li class="reviews-inner__slider-item swiper-slide">
+                <!-- Контент внутри слайдера -->
+                <div class="reviews__card-img">
+                  <img src="img/a7_2.jpg" alt="" class="reviews__card-img-elem" data-img="img/a7_2.jpg">
+                </div>
+              </li>
+
+              <!-- Слайды (c хэшом навигации)-->
+              <li class="reviews-inner__slider-item swiper-slide">
+                <!-- Контент внутри слайдера -->
+                <div class="reviews__card-img">
+                  <img src="img/a7_3.jpg" alt="" class="reviews__card-img-elem" data-img="img/a7_3.jpg">
+                </div>
+              </li>
+
+              <!-- Слайды (c хэшом навигации)-->
+              <li class="reviews-inner__slider-item swiper-slide">
+                <!-- Контент внутри слайдера -->
+                <div class="reviews__card-img">
+                  <img src="img/a7_4.jpg" alt="" class="reviews__card-img-elem" data-img="img/a7_4.jpg">
+                </div>
+              </li>
+
+              <!-- Слайды (c хэшом навигации)-->
+              <li class="reviews-inner__slider-item swiper-slide">
+                <!-- Контент внутри слайдера -->
+                <div class="reviews__card-img">
+                  <img src="img/a7_5.jpg" alt="" class="reviews__card-img-elem" data-img="img/a7_5.jpg">
+                </div>
+              </li>
+
+              <!-- Слайды (c хэшом навигации)-->
+              <li class="reviews-inner__slider-item swiper-slide">
+                <!-- Контент внутри слайдера -->
+                <div class="reviews__card-img">
+                  <img src="img/a7_6.jpg" alt="" class="reviews__card-img-elem" data-img="img/a7_6.jpg">
+                </div>
+              </li>
+
+
+            </ul>
+            <!-- Добавляем если нам нужна пагинация (параметр pagination)   -->
+            <div class="reviews-inner__pagination swiper-pagination"></div>
+
+          </div>
+
+          <!-- <div class="reviews__card-autor">
+                        Отзыв Виктории Ивановой
+                      </div> -->
+
+        </div>
+        <!-- slide 7 end  -->
+
+        <!-- slide 8 -->
+        <div class="swiper-slide reviews__card">
+          <!-- Главный контейнер слайдера -->
+          <div class="reviews-inner-slider swiper">
+            <!-- Обязательная оболочка -->
+            <ul class="reviews-inner__slider-list swiper-wrapper">
+              <li class="reviews-inner__slider-item swiper-slide">
+
+                <!-- Контент внутри слайдера -->
+                <div class="reviews__card-img">
+                  <img src="img/a8_1.jpg" alt="" class="reviews__card-img-elem" data-img="img/a8_1.jpg">
+                </div>
+
+              </li>
+              <!-- Слайды (c хэшом навигации)-->
+              <li class="reviews-inner__slider-item swiper-slide">
+
+                <!-- Контент внутри слайдера -->
+                <div class="reviews__card-img">
+                  <img src="img/a8_2.jpg" alt="" class="reviews__card-img-elem" data-img="img/a8_2.jpg">
+                </div>
+
+              </li>
+            </ul>
+            <!-- Добавляем если нам нужна пагинация (параметр pagination)   -->
+            <div class="reviews-inner__pagination swiper-pagination"></div>
+
+          </div>
+
+          <!-- <div class="reviews__card-autor">
+                                Отзыв Виктории Ивановой
+                              </div> -->
+
+        </div>
+        <!-- slide 8 end  -->
+
+        <!-- slide 9 -->
+        <div class="swiper-slide reviews__card">
+          <!-- Главный контейнер слайдера -->
+          <div class="reviews-inner-slider swiper">
+            <!-- Обязательная оболочка -->
+            <ul class="reviews-inner__slider-list swiper-wrapper">
+              <li class="reviews-inner__slider-item swiper-slide">
+
+                <!-- Контент внутри слайдера -->
+                <div class="reviews__card-img">
+                  <img src="img/a9_1.jpg" alt="" class="reviews__card-img-elem" data-img="img/a9_1.jpg">
+                </div>
+
+              </li>
+              <!-- Слайды (c хэшом навигации)-->
+              <li class="reviews-inner__slider-item swiper-slide">
+
+                <!-- Контент внутри слайдера -->
+                <div class="reviews__card-img">
+                  <img src="img/a9_2.jpg" alt="" class="reviews__card-img-elem" data-img="img/a9_2.jpg">
+                </div>
+
+              </li>
+            </ul>
+            <!-- Добавляем если нам нужна пагинация (параметр pagination)   -->
+            <div class="reviews-inner__pagination swiper-pagination"></div>
+
+          </div>
+
+          <!-- <div class="reviews__card-autor">
+                                        Отзыв Виктории Ивановой
+                                      </div> -->
+
+        </div>
+        <!-- slide 9 end  -->
+
+        <!-- slide 10 -->
+        <div class="swiper-slide reviews__card">
+          <!-- Главный контейнер слайдера -->
+          <div class="reviews-inner-slider swiper">
+            <!-- Обязательная оболочка -->
+            <ul class="reviews-inner__slider-list swiper-wrapper">
+              <li class="reviews-inner__slider-item swiper-slide">
+
+                <!-- Контент внутри слайдера -->
+                <div class="reviews__card-img">
+                  <img src="img/a10_1.jpg" alt="" class="reviews__card-img-elem" data-img="img/a10_1.jpg">
+                </div>
+
+              </li>
+              <!-- Слайды (c хэшом навигации)-->
+              <li class="reviews-inner__slider-item swiper-slide">
+
+                <!-- Контент внутри слайдера -->
+                <div class="reviews__card-img">
+                  <img src="img/a10_2.jpg" alt="" class="reviews__card-img-elem" data-img="img/a10_2.jpg">
+                </div>
+
+              </li>
+            </ul>
+            <!-- Добавляем если нам нужна пагинация (параметр pagination)   -->
+            <div class="reviews-inner__pagination swiper-pagination"></div>
+
+          </div>
+
+          <!-- <div class="reviews__card-autor">
+                                                Отзыв Виктории Ивановой
+                                              </div> -->
+
+        </div>
+        <!-- slide 10 end  -->
+
+
+        <!-- slide 11 -->
+        <div class="swiper-slide reviews__card">
+          <!-- Главный контейнер слайдера -->
+          <div class="reviews-inner-slider swiper">
+            <!-- Обязательная оболочка -->
+            <ul class="reviews-inner__slider-list swiper-wrapper">
+              <li class="reviews-inner__slider-item swiper-slide">
+
+                <!-- Контент внутри слайдера -->
+                <div class="reviews__card-img">
+                  <img src="img/a11_1.jpg" alt="" class="reviews__card-img-elem" data-img="img/a11_1.jpg">
+                </div>
+
+              </li>
+              <!-- Слайды (c хэшом навигации)-->
+              <li class="reviews-inner__slider-item swiper-slide">
+
+                <!-- Контент внутри слайдера -->
+                <div class="reviews__card-img">
+                  <img src="img/a11_2.jpg" alt="" class="reviews__card-img-elem" data-img="img/a11_2.jpg">
+                </div>
+
+              </li>
+            </ul>
+            <!-- Добавляем если нам нужна пагинация (параметр pagination)   -->
+            <div class="reviews-inner__pagination swiper-pagination"></div>
+
+          </div>
+
+          <!-- <div class="reviews__card-autor">
+                                                        Отзыв Виктории Ивановой
+                                                      </div> -->
+
+        </div>
+        <!-- slide 11 end  -->
+
+        <!-- slide 12 -->
+        <div class="swiper-slide reviews__card">
+          <!-- Главный контейнер слайдера -->
+          <div class="reviews-inner-slider swiper">
+            <!-- Обязательная оболочка -->
+            <ul class="reviews-inner__slider-list swiper-wrapper">
+              <li class="reviews-inner__slider-item swiper-slide">
+
+                <!-- Контент внутри слайдера -->
+                <div class="reviews__card-img">
+                  <img src="img/a12_1.jpg" alt="" class="reviews__card-img-elem" data-img="img/a12_1.jpg">
+                </div>
+
+              </li>
+              <!-- Слайды (c хэшом навигации)-->
+              <li class="reviews-inner__slider-item swiper-slide">
+
+                <!-- Контент внутри слайдера -->
+                <div class="reviews__card-img">
+                  <img src="img/a12_2.jpg" alt="" class="reviews__card-img-elem" data-img="img/a12_2.jpg">
+                </div>
+
+              </li>
+            </ul>
+            <!-- Добавляем если нам нужна пагинация (параметр pagination)   -->
+            <div class="reviews-inner__pagination swiper-pagination"></div>
+
+          </div>
+
+          <!-- <div class="reviews__card-autor">
+                                                                Отзыв Виктории Ивановой
+                                                              </div> -->
+        </div>
+        <!-- slide 12 end  -->
+
+        <!-- slide 13 -->
+        <div class="swiper-slide reviews__card">
+          <!-- Главный контейнер слайдера -->
+          <div class="reviews-inner-slider swiper">
+            <!-- Обязательная оболочка -->
+            <ul class="reviews-inner__slider-list swiper-wrapper">
+              <li class="reviews-inner__slider-item swiper-slide">
+
+                <!-- Контент внутри слайдера -->
+                <div class="reviews__card-img">
+                  <img src="img/a13_1.jpg" alt="" class="reviews__card-img-elem" data-img="img/a13_1.jpg">
+                </div>
+
+              </li>
+              <!-- Слайды (c хэшом навигации)-->
+              <li class="reviews-inner__slider-item swiper-slide">
+
+                <!-- Контент внутри слайдера -->
+                <div class="reviews__card-img">
+                  <img src="img/a13_2.jpg" alt="" class="reviews__card-img-elem" data-img="img/a13_2.jpg">
+                </div>
+
+              </li>
+            </ul>
+            <!-- Добавляем если нам нужна пагинация (параметр pagination)   -->
+            <div class="reviews-inner__pagination swiper-pagination"></div>
+
+          </div>
+
+          <!-- <div class="reviews__card-autor">
+                                                                        Отзыв Виктории Ивановой
+                                                                      </div> -->
+        </div>
+        <!-- slide 13 end  -->
+
+        <!-- slide 14 -->
+        <div class="swiper-slide reviews__card">
+          <!-- Главный контейнер слайдера -->
+          <div class="reviews-inner-slider swiper">
+            <!-- Обязательная оболочка -->
+            <ul class="reviews-inner__slider-list swiper-wrapper">
+              <li class="reviews-inner__slider-item swiper-slide">
+
+                <!-- Контент внутри слайдера -->
+                <div class="reviews__card-img">
+                  <img src="img/a14_1.jpg" alt="" class="reviews__card-img-elem" data-img="img/a14_1.jpg">
+                </div>
+
+              </li>
+              <!-- Слайды (c хэшом навигации)-->
+              <li class="reviews-inner__slider-item swiper-slide">
+
+                <!-- Контент внутри слайдера -->
+                <div class="reviews__card-img">
+                  <img src="img/a14_2.jpg" alt="" class="reviews__card-img-elem" data-img="img/a14_2.jpg">
+                </div>
+
+              </li>
+            </ul>
+            <!-- Добавляем если нам нужна пагинация (параметр pagination)   -->
+            <div class="reviews-inner__pagination swiper-pagination"></div>
+
+          </div>
+
+          <!-- <div class="reviews__card-autor">
+                                                                                Отзыв Виктории Ивановой
+                                                                              </div> -->
+        </div>
+        <!-- slide 14 end  -->
+
+        <!-- slide 15 -->
+        <div class="swiper-slide reviews__card">
+          <!-- Главный контейнер слайдера -->
+          <div class="reviews-inner-slider swiper">
+            <!-- Обязательная оболочка -->
+            <ul class="reviews-inner__slider-list swiper-wrapper">
+              <li class="reviews-inner__slider-item swiper-slide">
+
+                <!-- Контент внутри слайдера -->
+                <div class="reviews__card-img">
+                  <img src="img/a15_1.jpg" alt="" class="reviews__card-img-elem" data-img="img/a15_1.jpg">
+                </div>
+
+              </li>
+              <!-- Слайды (c хэшом навигации)-->
+              <li class="reviews-inner__slider-item swiper-slide">
+
+                <!-- Контент внутри слайдера -->
+                <div class="reviews__card-img">
+                  <img src="img/a15_2.jpg" alt="" class="reviews__card-img-elem" data-img="img/a15_2.jpg">
+                </div>
+
+              </li>
+            </ul>
+            <!-- Добавляем если нам нужна пагинация (параметр pagination)   -->
+            <div class="reviews-inner__pagination swiper-pagination"></div>
+
+          </div>
+
+          <!-- <div class="reviews__card-autor">
+                                                                                        Отзыв Виктории Ивановой
+                                                                                      </div> -->
+        </div>
+        <!-- slide 15 end  -->
+
+        <!-- slide 16 -->
+        <div class="swiper-slide reviews__card">
+          <!-- Главный контейнер слайдера -->
+          <div class="reviews-inner-slider swiper">
+            <!-- Обязательная оболочка -->
+            <ul class="reviews-inner__slider-list swiper-wrapper">
+              <li class="reviews-inner__slider-item swiper-slide">
+
+                <!-- Контент внутри слайдера -->
+                <div class="reviews__card-img">
+                  <img src="img/a16_1.jpg" alt="" class="reviews__card-img-elem" data-img="img/a16_1.jpg">
+                </div>
+
+              </li>
+              <!-- Слайды (c хэшом навигации)-->
+              <li class="reviews-inner__slider-item swiper-slide">
+
+                <!-- Контент внутри слайдера -->
+                <div class="reviews__card-img">
+                  <img src="img/a16_2.jpg" alt="" class="reviews__card-img-elem" data-img="img/a16_2.jpg">
+                </div>
+
+              </li>
+            </ul>
+            <!-- Добавляем если нам нужна пагинация (параметр pagination)   -->
+            <div class="reviews-inner__pagination swiper-pagination"></div>
+
+          </div>
+
+          <!-- <div class="reviews__card-autor">
+                                                                                                Отзыв Виктории Ивановой
+                                                                                              </div> -->
+        </div>
+        <!-- slide 16 end  -->
 
       </div>
       <!-- swiper-wrap end  -->
@@ -2110,7 +2713,7 @@
       <!-- end logo -->
 
       <!-- кнопка -->
-      <button class="footer__btn js-request-call">Заказать звонок</button>
+      <button class="footer__btn popup-link" data-popup="modal-call">Заказать звонок</button>
       <!-- кнопка конец  -->
 
     </div>
@@ -2328,13 +2931,615 @@
       </div>
       <!-- верх конец -->
       <!-- низ  -->
-      <a href="#" class="footer__politics">Политика конфиденциальности</a>
+      <a href="politics.html" class="footer__politics">Политика конфиденциальности</a>
       <!-- низ конец -->
     </div>
     <!-- нижняя часть конец-->
+  </div>
 
+
+
+  <!-- 1. Обратный звонок  -->
+  <div class="modal " id="modal-call">
+    <div class="modal__content">
+      <!-- button  -->
+      <button class="modal__close">
+      </button>
+      <div class="modal__inner">
+        <h3 class="modal__title">ЗАКАЖИТЕ <span>ОБРАТНЫЙ ЗВОНОК</span></h3>
+        <div class="modal__desc">
+          Оставьте свои контактные данные и мы свяжемся с Вами в ближайшее время
+        </div>
+        <div class="modal__form form">
+          <form action="" class="form__elem js-form">
+            <!-- строка -->
+            <div class="form__row">
+              <!-- блок  -->
+              <div class="form__block">
+                <input type="hidden" name="Форма" value="Закажите обратный звонок">
+                <input type=" text" class="form__input js-text-input" name="username" placeholder="Ваше имя">
+              </div>
+              <!-- блок  -->
+              <div class="form__block">
+                <input type="text" class="form__input js-phone-input" name="phone" placeholder="Номер телефона">
+              </div>
+              <!-- блок  -->
+              <div class="form__block">
+                <div class="form__error js-form-error"></div>
+              </div>
+              <!-- блок  -->
+              <div class="form__block">
+                <label class="form__checkbox-wrap">
+                  <input type="checkbox" class="form__checkbox js-form-checkbox" name="agree">
+                  <div class="form__checkbox-custom">
+                    <svg class="form__checkbox-custom-icon" viewBox="0 0 15 15">
+                      <use xlink:href="img/icons/sprite.svg#check"></use>
+                    </svg>
+                  </div>
+                  <span class="form__politics">Согласен <a href="politics.html" target="_blank">с политикой
+                      конфиденциальности и
+                      обработкой моих
+                      персональных данных</a></span>
+                </label>
+              </div>
+              <!-- блок  -->
+              <div class="form__block">
+                <button class="form__btn btn js-btn">ЗАКАЗАТЬ ЗВОНОК </button>
+              </div>
+            </div>
+          </form>
+        </div>
+      </div>
+    </div>
+  </div>
+
+  <!-- 2. Записаться на тестирование -->
+  <div class="modal " id="modal-testing">
+    <div class="modal__content">
+      <!-- button  -->
+      <button class="modal__close">
+      </button>
+      <div class="modal__inner">
+        <h3 class="modal__title">ЗАПИШИТЕСЬ НА <br><span>ФУНКЦИОНАЛЬНУЮ ДИАГНОСТИКУ</span></h3>
+        <div class="modal__desc">
+          Оставьте свои контактные <br class="br-mobile">данные и мы свяжемся с Вами <br class="br-mobile">в ближайшее
+          время
+        </div>
+
+
+        <div class="modal__form form">
+          <form action="" class="form__elem js-form">
+            <!-- строка -->
+            <div class="form__row">
+              <!-- блок  -->
+              <div class="form__block">
+                <input type="hidden" name="Форма" value="Записаться на тестирование">
+                <input type=" text" class="form__input  js-text-input" name="username" placeholder="Ваше имя">
+              </div>
+              <!-- блок  -->
+              <div class="form__block">
+                <input type="text" class="form__input js-phone-input" name="phone" placeholder="Номер телефона">
+              </div>
+              <!-- блок  -->
+              <div class="form__block">
+                <!-- select  -->
+                <div class="custom-select">
+                  <select name="diagnostics">
+                    <option>Выберите диагностику</option>
+                    <option value="АПК «Лотос-Оникс»">АПК «Лотос-Оникс»</option>
+                    <option value="Адаптометрия голографической матрицы">Адаптометрия голографической матрицы</option>
+                    <option value="Уровень развития личности">Уровень развития личности</option>
+                    <option value="АПК «КРИСТАЛЛ»">АПК «КРИСТАЛЛ»</option>
+                    <option value="Анализ состояния здоровья">Анализ состояния здоровья</option>
+                    <option value="«Дианел ПРО»">«Дианел ПРО»</option>
+                    <option value="Метод газоразрядной визуализации (ГРВ)">Метод газоразрядной визуализации (ГРВ)
+                    </option>
+                    <option value="Мониторинг безопасности объектов">Мониторинг безопасности объектов</option>
+                    <option value="Определение психотипа личности">Определение психотипа личности</option>
+                    <option value="Нужна консультация специалиста">Нужна консультация специалиста</option>
+                  </select>
+                </div>
+                <!-- select end -->
+              </div>
+              <!-- блок  -->
+              <div class="form__block">
+                <div class="form__error js-form-error"></div>
+              </div>
+
+              <!-- блок  -->
+              <div class="form__block">
+                <label class="form__checkbox-wrap">
+                  <input type="checkbox" class="form__checkbox js-form-checkbox" name="agree">
+                  <div class="form__checkbox-custom">
+
+                    <svg class="form__checkbox-custom-icon" viewBox="0 0 15 15">
+                      <use xlink:href="img/icons/sprite.svg#check"></use>
+                    </svg>
+
+                  </div>
+                  <span class="form__politics">Согласен <a href="politics.html">с политикой конфиденциальности и
+                      обработкой моих
+                      персональных данных</a></span>
+                </label>
+              </div>
+
+
+              <!-- блок  -->
+              <div class="form__block">
+                <button class="form__btn btn js-btn">Записаться</button>
+              </div>
+
+            </div>
+          </form>
+        </div>
+
+
+
+
+
+
+      </div>
+    </div>
+  </div>
+
+  <!-- 3 Видео -->
+  <div class="modal " id="modal-video">
+    <div class="modal__content">
+      <!-- button  -->
+      <button class="modal__close">
+      </button>
+      <div class="modal__inner">
+        <div class="modal__video video pause" data-id=hj1tf3HjxpE>
+  <div class="video__preview">
+    <picture>
+      <img src="img/why-preview.png" alt="why-preview" class="video__preview-img">
+    </picture>
+  </div>
+
+
+  <button class="video__btn">
+
+  </button>
+
+  <div class="video__elem">
 
   </div>
+
+</div>
+      </div>
+    </div>
+  </div>
+
+  <!-- 3.1 Видео на странице Зеркала-->
+  <div class="modal " id="modal-video-mirrors">
+    <div class="modal__content">
+      <!-- button  -->
+      <button class="modal__close">
+      </button>
+      <div class="modal__inner">
+        <div class="modal__video video pause" data-id=hj1tf3HjxpE>
+  <div class="video__preview">
+    <picture>
+      <img src="img/why-preview.png" alt="why-preview" class="video__preview-img">
+    </picture>
+  </div>
+
+
+  <button class="video__btn">
+
+  </button>
+
+  <div class="video__elem">
+
+  </div>
+
+</div>
+      </div>
+    </div>
+  </div>
+
+  <!-- 4 Более 12 модификаций  -->
+  <div class="modal" id="modal-modifications">
+    <div class="modal__content">
+      <!-- button  -->
+      <button class="modal__close">
+      </button>
+      <div class="modal__inner">
+        <h3 class="modal__title">ЗАПИШИТЕСЬ НА <br class="br-mobile"><span>СЕАНС<br class="br-desktop"> В ЗЕРКАЛА
+            КОЗЫРЕВА БИГ</span></h3>
+        <div class="modal__desc">
+          Заполните форму и специалист нашего центра свяжемся с Вами в ближайшее время
+        </div>
+
+
+        <div class="modal__form form">
+          <form action="" class="form__elem js-form">
+            <!-- строка -->
+            <div class="form__row">
+              <!-- блок  -->
+              <div class="form__block">
+                <input type="hidden" name="Форма" value="Запишитесь на сеанс">
+                <input type="hidden" name="modification" value="">
+                <input type="text" class="form__input js-text-input" name="username" placeholder="Ваше имя">
+              </div>
+              <!-- блок  -->
+              <div class="form__block">
+                <input type="text" class="form__input js-phone-input" name="phone" placeholder="Номер телефона">
+              </div>
+
+
+
+              <!-- блок  -->
+              <div class="form__block">
+                <div class="form__error js-form-error">Тут будет ошибка</div>
+              </div>
+
+              <!-- блок  -->
+              <div class="form__block">
+                <label class="form__checkbox-wrap">
+                  <input type="checkbox" class="form__checkbox js-form-checkbox" name="agree">
+                  <div class="form__checkbox-custom">
+
+                    <svg class="form__checkbox-custom-icon" viewBox="0 0 15 15">
+                      <use xlink:href="img/icons/sprite.svg#check"></use>
+                    </svg>
+
+                  </div>
+                  <span class="form__politics">Согласен <a href="politics.html">с политикой конфиденциальности и
+                      обработкой моих
+                      персональных данных</a></span>
+                </label>
+              </div>
+
+
+              <!-- блок  -->
+              <div class="form__block">
+                <button class="form__btn btn js-btn">Записаться</button>
+              </div>
+
+            </div>
+          </form>
+        </div>
+
+
+
+
+
+
+      </div>
+    </div>
+  </div>
+  <!-- 5 Какие эффекты ощущают наши клиенты + Какие виды диагностических исслед. вы можете пройти в нашем центре -->
+  <div class="modal " id="modal-types-diagnostics">
+    <div class="modal__content">
+      <!-- button  -->
+      <button class="modal__close">
+      </button>
+      <div class="modal__inner">
+        <h3 class="modal__title">ЗАПИШИТЕСЬ НА СЕАНС</h3>
+        <div class="modal__desc">
+          Ответьте на вопросы, заполните контактные данные и специалист нашего центра свяжемся с Вами в ближайшее время
+        </div>
+
+
+
+        <ul class="modal__steps">
+          <!-- active -->
+          <li class="modal__step active">
+            <p class="modal__step-title">
+              Выберите услугу:
+            </p>
+
+            <ul class="modal__step-radios">
+              <li class="modal__step-radio">
+                <label class="modal__radio-wrap">
+                  <input type="radio" class="modal__radio" name="course" value="Курс из 5 сеансов">
+                  <div class="modal__radio-custom">
+
+                    <svg class="modal__radio-custom-icon" viewBox="0 0 15 15">
+                      <use xlink:href="img/icons/sprite.svg#check"></use>
+                    </svg>
+
+                  </div>
+                  <span class="modal__radio-custom-label">Курс из 5 сеансов</span>
+                </label>
+              </li>
+              <li class="modal__step-radio"><label class="modal__radio-wrap">
+                  <input type="radio" class="modal__radio" name="course" value="Курс из 7 сеансов">
+                  <div class="modal__radio-custom">
+
+                    <svg class="modal__radio-custom-icon" viewBox="0 0 15 15">
+                      <use xlink:href="img/icons/sprite.svg#check"></use>
+                    </svg>
+
+                  </div>
+                  <span class="modal__radio-custom-label">Курс из 7 сеансов</span>
+                </label></li>
+              <li class="modal__step-radio"><label class="modal__radio-wrap">
+                  <input type="radio" class="modal__radio" name="course" value="Курс из 10 сеансов">
+                  <div class="modal__radio-custom">
+
+                    <svg class="modal__radio-custom-icon" viewBox="0 0 15 15">
+                      <use xlink:href="img/icons/sprite.svg#check"></use>
+                    </svg>
+
+                  </div>
+                  <span class="modal__radio-custom-label">Курс из 10 сеансов</span>
+                </label></li>
+              <li class="modal__step-radio">
+                <label class="modal__radio-wrap">
+                  <input type="radio" class="modal__radio" name="course" value="Разовое посещение">
+                  <div class="modal__radio-custom">
+
+                    <svg class="modal__radio-custom-icon" viewBox="0 0 15 15">
+                      <use xlink:href="img/icons/sprite.svg#check"></use>
+                    </svg>
+
+                  </div>
+                  <span class="modal__radio-custom-label">Разовое посещение</span>
+                </label>
+              </li>
+              <li class="modal__step-radio"><label class="modal__radio-wrap">
+                  <input type="radio" class="modal__radio" name="course" value="Диагностические комплексы">
+                  <div class="modal__radio-custom">
+
+                    <svg class="modal__radio-custom-icon" viewBox="0 0 15 15">
+                      <use xlink:href="img/icons/sprite.svg#check"></use>
+                    </svg>
+
+                  </div>
+                  <span class="modal__radio-custom-label">Диагностические комплексы</span>
+                </label></li>
+            </ul>
+
+            <div class="modal__step-btns">
+              <button class="btn btn--gray  modal__step-btn js-diagnostics-next-btn">
+                Далее&nbsp;→
+              </button>
+            </div>
+
+
+          </li>
+
+          <li class="modal__step ">
+            <div class="modal__form form">
+              <form action="" class="form__elem js-form">
+                <!-- строка -->
+                <div class="form__row form__row--two-col">
+                  <!-- блок  -->
+                  <div class="form__block">
+                    <input type="hidden" name="Форма" value="Записаться на сеанс">
+                    <input type="hidden" name="type-diagnostics">
+                    <input type="text" class="form__input js-text-input" name="username" placeholder="Ваше имя">
+                  </div>
+                  <!-- блок  -->
+                  <div class="form__block">
+                    <input type="text" class="form__input js-phone-input" name="phone" placeholder="Номер телефона">
+                  </div>
+                </div>
+
+
+                <div class="form__row">
+                  <!-- блок  -->
+                  <div class="form__block">
+                    <div class="form__error js-form-error">Тут будет ошибка</div>
+                  </div>
+
+                  <!-- блок  -->
+                  <div class="form__block">
+                    <label class="form__checkbox-wrap">
+                      <input type="checkbox" class="form__checkbox js-form-checkbox" name="agree">
+                      <div class="form__checkbox-custom">
+
+                        <svg class="form__checkbox-custom-icon" viewBox="0 0 15 15">
+                          <use xlink:href="img/icons/sprite.svg#check"></use>
+                        </svg>
+
+                      </div>
+                      <span class="form__politics">Согласен <a href="politics.html">с политикой конфиденциальности и
+                          обработкой моих
+                          персональных данных</a></span>
+                    </label>
+                  </div>
+
+
+                </div>
+
+                <div class="form__row form__row--btns">
+
+                  <button class="btn btn--gray modal__step-btn js-diagnostics-prev-btn"
+                    type="button">←&nbsp;Назад</button>
+
+                  <button class="form__btn btn js-btn">Записаться</button>
+                </div>
+
+              </form>
+            </div>
+          </li>
+        </ul>
+
+      </div>
+    </div>
+  </div>
+  <!-- 6 Задать вопрос  -->
+  <div class="modal " id="modal-quesiton">
+    <div class="modal__content">
+      <!-- button  -->
+      <button class="modal__close">
+      </button>
+      <div class="modal__inner">
+        <h3 class="modal__title">ОСТАЛИСЬ ВОПРОСЫ?</h3>
+        <div class="modal__desc">
+          Задайте свой вопрос специалисту центра, заранее проверив наличие ответа в нашем официальном сообществе ВК.
+          Заполните
+          контактные данные и специалист нашего центра свяжемся с Вами в ближайшее время
+        </div>
+
+
+        <div class="modal__form form">
+          <form action="" class="form__elem js-form">
+            <!-- строка -->
+            <div class="form__row">
+              <!-- блок  -->
+              <div class="form__block"><input type="hidden" name="Форма" value="Задать вопрос">
+                <input type="text" class="form__input js-text-input" name="username" placeholder="Ваше имя">
+              </div>
+              <!-- блок  -->
+              <div class="form__block">
+                <input type="text" class="form__input js-phone-input" name="phone" placeholder="Номер телефона">
+              </div>
+
+              <!-- Введите ваш вопрос -->
+              <!-- блок  -->
+              <div class="form__block">
+                <textarea name="question" class="form__textarea js-text-input" id="" cols="" rows=""
+                  placeholder="Введите ваш вопрос"></textarea>
+
+              </div>
+
+              <!-- блок  -->
+              <div class="form__block">
+                <div class="form__error js-form-error"></div>
+              </div>
+
+              <!-- блок  -->
+              <div class="form__block">
+                <label class="form__checkbox-wrap">
+                  <input type="checkbox" class="form__checkbox js-form-checkbox" name="agree">
+                  <div class="form__checkbox-custom">
+
+                    <svg class="form__checkbox-custom-icon" viewBox="0 0 15 15">
+                      <use xlink:href="img/icons/sprite.svg#check"></use>
+                    </svg>
+
+                  </div>
+                  <span class="form__politics">Согласен <a href="politics.html">с политикой конфиденциальности и
+                      обработкой моих
+                      персональных данных</a></span>
+                </label>
+              </div>
+
+
+              <!-- блок  -->
+              <div class="form__block">
+                <button class="form__btn btn js-btn">Задать вопрос</button>
+              </div>
+
+            </div>
+          </form>
+        </div>
+
+
+
+
+
+
+      </div>
+    </div>
+  </div>
+
+  <!-- 7 Получить констультацию  -->
+  <!-- 1. Обратный звонок  -->
+  <div class="modal" id="modal-consultation">
+    <div class="modal__content">
+      <!-- button  -->
+      <button class="modal__close">
+      </button>
+      <div class="modal__inner">
+        <h3 class="modal__title">Получите <span>бесплатную консультацию</span> по выбору диагностики</h3>
+        <div class="modal__desc">
+          Оставьте свои контактные данные и специалист центра свяжется с вами в ближайшее время
+        </div>
+        <div class="modal__form form">
+          <form action="" class="form__elem js-form">
+            <!-- строка -->
+            <div class="form__row">
+              <!-- блок  -->
+              <div class="form__block">
+                <input type="hidden" name="Форма" value="Получить констультацию">
+                <input type=" text" class="form__input js-text-input" name="username" placeholder="Ваше имя">
+              </div>
+              <!-- блок  -->
+              <div class="form__block">
+                <input type="text" class="form__input js-phone-input" name="phone" placeholder="Номер телефона">
+              </div>
+              <!-- блок  -->
+              <div class="form__block">
+                <div class="form__error js-form-error"></div>
+              </div>
+              <!-- блок  -->
+              <div class="form__block">
+                <label class="form__checkbox-wrap">
+                  <input type="checkbox" class="form__checkbox js-form-checkbox" name="agree">
+                  <div class="form__checkbox-custom">
+                    <svg class="form__checkbox-custom-icon" viewBox="0 0 15 15">
+                      <use xlink:href="img/icons/sprite.svg#check"></use>
+                    </svg>
+                  </div>
+                  <span class="form__politics">Согласен <a href="politics.html" target="_blank">с политикой
+                      конфиденциальности и
+                      обработкой моих
+                      персональных данных</a></span>
+                </label>
+              </div>
+              <!-- блок  -->
+              <div class="form__block">
+                <button class="form__btn btn js-btn">ЗАКАЗАТЬ ЗВОНОК </button>
+              </div>
+            </div>
+          </form>
+        </div>
+      </div>
+    </div>
+  </div>
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+  <!-- Успех  -->
+  <div class="modal" id="modal-success">
+    <div class="modal__content">
+      <!-- button  -->
+      <button class="modal__close">
+      </button>
+      <div class="modal__inner">
+        <h3 class="modal__title">Ваши <span>данные успешно отправлены</span></h3>
+        <div class="modal__desc">
+          Наш менеджер свяжется с вами в ближайшее время
+        </div>
+      </div>
+    </div>
+  </div>
+
+  <!-- Не Успех  -->
+  <div class="modal" id="modal-error">
+    <div class="modal__content">
+      <!-- button  -->
+      <button class="modal__close">
+      </button>
+      <div class="modal__inner">
+        <h3 class="modal__title">Ваши данные <br><span style="color: rgb(199, 95, 95);">не были отправлены</span></h3>
+        <div class="modal__desc">
+          Обратитесь администратору сайта для устранения ошибки
+        </div>
+      </div>
+    </div>
+  </div>
+
 </footer>
 
 <script src="https://cdn.jsdelivr.net/npm/swiper@10/swiper-bundle.min.js"></script>
@@ -2348,7 +3553,7 @@
 
 
 <script src="http://code.jquery.com/jquery-3.3.1.min.js"></script>
-
+<script src="vendor/inputmask.min.js"></script>
 <script src="js/bundle.min.js"></script>
 </body>
 
